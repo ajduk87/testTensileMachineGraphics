@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="testTensileMachineGraphics.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SumReportDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\ZbirniIzvestaji\</Value>
+    </Setting>
+    <Setting Name="onlineFilepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\online.txt</Value>
+    </Setting>
+    <Setting Name="e2e4Filepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\e2e4Online.e2e4</Value>
+    </Setting>
+    <Setting Name="inputOutputFilepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\ulazIzlazOnline.inputoutput</Value>
+    </Setting>
+    <Setting Name="sampleReportFilepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\izvestajOnline.xml</Value>
+    </Setting>
+    <Setting Name="sampleReportGraphicFilepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\izvestajGrafikOnline.png</Value>
+    </Setting>
+    <Setting Name="sampleReportGraphicFilepathChangeOfR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\izvestajGrafikOnlinePromenaR.png</Value>
+    </Setting>
+    <Setting Name="sampleReportGraphicFilepathChangeOfE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\izvestajGrafikOnlinePromenaE.png</Value>
+    </Setting>
+    <Setting Name="unsavedFilepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\nezapamceno.txt</Value>
+    </Setting>
+    <Setting Name="SaveDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\Arhiva\</Value>
+    </Setting>
+    <Setting Name="SaveDirectoryForReports" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\PojedinacniIzvestaji\</Value>
+    </Setting>
+    <Setting Name="unsavedFilepathPreassureElongation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\nezapamceno.pe</Value>
+    </Setting>
+    <Setting Name="PATHOFSUMREPORT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\kidalicaMetal\ZbirniIzvestaji\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

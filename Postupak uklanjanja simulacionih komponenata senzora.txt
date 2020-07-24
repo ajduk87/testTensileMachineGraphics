@@ -1,0 +1,46 @@
+Postupak uklanjanja simulacionih komponenata senzora:
+
+1. u konstruktoru online moda iskljuciti sledeci deo koda
+    //only for testing purpose
+                sensorForPreassure = new SensorSimulator(System.Environment.CurrentDirectory + "\\SensorsData.txt");
+                sensorForElongation = new SensorSimulator(System.Environment.CurrentDirectory + "\\SensorsData.txt");
+                sensorForPreassure.LoadData(1);
+                sensorForElongation.LoadData(2);
+
+                //napravi i pokreni testne tajmere
+                long intervalTestLabJack = 16660;//16660 microseconds
+                _LabJackWorkingTest = new MicroTimer();
+                _LabJackWorkingTest.MicroTimerElapsed +=
+                    new MicroTimer.MicroTimerElapsedEventHandler(Timer2_TickTest);
+                _LabJackWorkingTest.Interval = intervalTestLabJack;
+
+
+                // Ignore event if late by half the interval
+                _LabJackWorkingTest.IgnoreEventIfLateBy = intervalTestLabJack / 2;
+
+
+
+                long intervalTestserialPort = 16660;//16660 microseconds
+                _serialPortTestTimer = new MicroTimer();
+                _serialPortTestTimer.MicroTimerElapsed +=
+                    new MicroTimer.MicroTimerElapsedEventHandler(dataReceivedTest);
+                _serialPortTestTimer.Interval = intervalTestserialPort;
+
+
+                // Ignore event if late by half the interval
+                _serialPortTestTimer.IgnoreEventIfLateBy = intervalTestserialPort / 2;
+         
+					
+2. u metodi  private void btnStartSample_Click(object sender, RoutedEventArgs e) iskljuciti sledeci blok koda
+
+			         _LabJackWorkingTest.Start();
+            			 _serialPortTestTimer.Start();
+				
+
+3. u metodi  private void callAfterManualStopingTearing()  iskljuciti sledeci blok koda
+
+				
+                _LabJackWorkingTest.Stop();
+                _serialPortTestTimer.Stop();
+                counterForPreassure = 0;
+                counterForElongation = 0;

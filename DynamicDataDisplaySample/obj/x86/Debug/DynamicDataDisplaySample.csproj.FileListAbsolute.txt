@@ -1,0 +1,418 @@
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+c:\users\mesta\documents\visual studio 2010\Projects\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\My Documents\Visual Studio 2010\Useful librares dll\DynamicDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\WPF Charts\VoltageDataDisplaySample\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\DATA\ajd7878\Documents\Visual Studio 2010\Projects\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 19 avgust 2014 h\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\DATA\ajd7878\Documents\Visual Studio 2010\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\My Documents\Visual Studio 2010\Projects\kidalice\grafici 20 avgust 2014 j version2\WPF Charts\ChartsDemo1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\20 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\21 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+G:\testTensilemachineGraphics_AllVersion\22 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\24 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\25 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\25 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\26 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\26 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\26 avgust 2014 v3\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\27 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\27 avgust 2014 v2\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Videos\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\29 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\30 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplaySample.pdb
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.dll
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\DynamicDataDisplay.pdb
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.baml
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\MainWindow.g.cs
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\App.g.cs
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample_MarkupCompile.cache
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.g.resources
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.Properties.Resources.resources
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.exe
+D:\testTensilemachineGraphics_AllVersion\31 avgust 2014 v1\DynamicDataDisplaySample\obj\x86\Debug\DynamicDataDisplaySample.pdb

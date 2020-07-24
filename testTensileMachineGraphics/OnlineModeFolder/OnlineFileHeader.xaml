@@ -1,0 +1,454 @@
+﻿<Window x:Class="testTensileMachineGraphics.OnlineModeFolder.OnlineFileHeader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FontSize="11"
+        ResizeMode="CanResize"
+        SizeChanged="Window_SizeChanged"
+        Closing="Window_Closing"
+        Closed="Window_Closed"
+        FontWeight="Bold"
+        Title="EPRUVETA" Height="434" Width="280">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontWeight"  Value="Normal"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontWeight"  Value="Normal"/>
+            </Style>
+
+        </Grid.Resources>
+      
+            <Grid Background="SkyBlue">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.95*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+            </Grid.RowDefinitions>
+
+              
+
+                 <GroupBox Name="grboxEpruvetaOblik"
+                  Header="Oblik"
+                  FontSize="15"
+                  BorderBrush="White"
+                  Foreground="White"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.RowSpan="3"
+                  Grid.ColumnSpan="2"/>
+
+            <GroupBox Name="grboxEpruvetaTip"
+                  Header="Tip"
+                  FontSize="15"
+                  BorderBrush="White"
+                  Foreground="White"
+                  Grid.Row="3"
+                  Grid.Column="0"
+                  Grid.RowSpan="3"
+                  Grid.ColumnSpan="2"/>
+
+
+
+            <GroupBox Name="grboxEpruvetaPravacVrsta"
+                  Header="Vrsta epruvete"
+                  FontSize="15"
+                  BorderBrush="White"
+                  Foreground="White"
+                  Grid.Row="6"
+                  Grid.Column="0"
+                  Grid.RowSpan="7"
+                  Grid.ColumnSpan="2"/>
+                
+                
+            <Grid Name="gridOblik" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="1.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                </Grid.RowDefinitions>
+
+                <RadioButton GroupName="EpvOblik" 
+                             Name="rbtnEpvOblikObradjena"
+                             GotFocus="rbtnEpvOblikObradjena_GotFocus"
+                             Content="Obradjena"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Bottom"
+                             Grid.Column="1"
+                             Grid.Row="0"/>
+
+                <RadioButton GroupName="EpvOblik" 
+                             Name="rbtnEpvOblikNeobradjena"
+                             GotFocus="rbtnEpvOblikNeobradjena_GotFocus"
+                             Content="Neobradjena"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Grid.Column="1"
+                             Grid.Row="1"/>
+
+            </Grid>
+
+            <Grid Name="gridTip" Grid.Column="0" Grid.Row="4" Grid.RowSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="1.1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="26"/>
+                        <RowDefinition Height="26"/>
+                    </Grid.RowDefinitions>
+
+
+                    <RadioButton GroupName="EpvTip" 
+                             Name="rbtnEpvTipProporcionalna"
+                             GotFocus="rbtnEpvTipProporcionalna_GotFocus"
+                             Content="Proporcionalna"
+                             Checked="rbtnEpvTipProporcionalna_Checked"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Grid.Column="1"
+                             Grid.Row="0"/>
+
+                    <RadioButton GroupName="EpvTip" 
+                             Name="rbtnEpvTipNeproporcionalna"
+                             GotFocus="rbtnEpvTipNeproporcionalna_GotFocus"
+                             Content="Neproporcionalna"
+                             Checked="rbtnEpvTipNeproporcionalna_Checked"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Grid.Column="1"
+                             Grid.Row="3"/>
+                    
+                </Grid>
+
+                <Grid Name="gridK" Grid.Column="1" Grid.Row="4" Grid.RowSpan="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.65*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <RadioButton GroupName="EpvK" 
+                             Name="rbtnEpvK1"
+                             GotFocus="rbtnEpvK1_GotFocus"
+                             Content="5.65"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center" 
+                             Grid.Column="1"
+                             Grid.Row="0" />
+
+                    <RadioButton GroupName="EpvK" 
+                             Name="rbtnEpvK2"
+                             GotFocus="rbtnEpvK2_GotFocus"
+                             Content="11.3"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Grid.Column="2"
+                             Grid.Row="0"/>
+                </Grid>
+
+             
+
+
+                        <Grid Name="gridPravougaona"
+                      Grid.Column="0"
+                      Grid.Row="7">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="1.1*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RadioButton GroupName="EpvVrsta" 
+                                         Name="rbtnEpvVrstaPravougaona"
+                                         GotFocus="rbtnEpvVrstaPravougaona_GotFocus"
+                                         Content="Pravougaona"
+                                         Checked="rbtnEpvVrstaPravougaona_Checked"
+                                         Unchecked="rbtnEpvVrstaPravougaona_Unchecked"
+                                         HorizontalContentAlignment="Right"
+                                         HorizontalAlignment="Left"
+                                         VerticalAlignment="Bottom"
+                                         Grid.Column="1"/>
+
+
+               
+            </Grid>
+
+                        <Grid Name="gridKruzni"
+                              Grid.Column="0"
+                              Grid.Row="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="1.1*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RadioButton GroupName="EpvVrsta" 
+                                         Name="rbtnEpvVrstaKruzni"
+                                         GotFocus="rbtnEpvVrstaKruzni_GotFocus"
+                                         Content="Kružna"
+                                         Checked="rbtnEpvVrstaKruzni_Checked"
+                                         Unchecked="rbtnEpvVrstaKruzni_Unchecked"
+                                         HorizontalContentAlignment="Right"
+                                         HorizontalAlignment="Left"
+                                         VerticalAlignment="Bottom"
+                                         Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid Name="gridCevasti"
+                              Grid.Column="0"
+                              Grid.Row="9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="1.1*"/>
+                            </Grid.ColumnDefinitions>
+
+                        
+
+                            <RadioButton GroupName="EpvVrsta" 
+                                         Name="rbtnEpvVrstaCevasti"
+                                         GotFocus="rbtnEpvVrstaCevasti_GotFocus"
+                                         Content="Cevasta"
+                                         Checked="rbtnEpvVrstaCevasti_Checked"
+                                         Unchecked="rbtnEpvVrstaCevasti_Unchecked"
+                                         HorizontalContentAlignment="Right"
+                                         HorizontalAlignment="Left"
+                                         VerticalAlignment="Bottom"
+                                         Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid Name="gridDeocev"
+                      Grid.Column="0"
+                      Grid.Row="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="1.1*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RadioButton GroupName="EpvVrsta" 
+                                         Name="rbtnEpvVrstaDeocev"
+                                         GotFocus="rbtnEpvVrstaDeocev_GotFocus"
+                                         Content="Deo cevi  "
+                                         Checked="rbtnEpvVrstaDeocev_Checked"
+                                         Unchecked="rbtnEpvVrstaDeocev_Unchecked"
+                                         HorizontalContentAlignment="Right"
+                                         HorizontalAlignment="Left"
+                                         VerticalAlignment="Bottom"
+                                         Grid.Column="1"/>
+                            </Grid>
+
+                    <!--     <Grid Name="gridMaseni"
+                      Grid.Column="0"
+                      Grid.Row="12">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                  <TextBlock Name="lblEpvVrstaMaseni"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Text="Maseni  "
+                           Grid.Column="0"/>
+
+                            <RadioButton GroupName="EpvVrsta" 
+                             Name="rbtnEpvVrstaMaseni"
+                             Content=""
+                             Checked="rbtnEpvVrstaMaseni_Checked"
+                             Unchecked="rbtnEpvVrstaMaseni_Unchecked"
+                             HorizontalContentAlignment="Right"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Grid.Column="1"/>
+                        </Grid>  -->
+
+                        <Grid Name="gridSestaugaona"
+                      Grid.Column="0"
+                      Grid.Row="11">
+                            <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="1.1*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RadioButton GroupName="EpvVrsta" 
+                                         Name="rbtnEpvVrstaSestaugaona"
+                                         GotFocus="rbtnEpvVrstaSestaugaona_GotFocus"
+                                         Content="Šestaugaona  "
+                                         Checked="rbtnEpvVrstaSestaugaona_Checked"
+                                         Unchecked="rbtnEpvVrstaSestaugaona_Unchecked"
+                                         HorizontalContentAlignment="Right"
+                                         HorizontalAlignment="Left"
+                                         VerticalAlignment="Center"
+                                         Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid Name="gridTextboxs"
+                              Grid.Row="6"
+                              Grid.Column="1"
+                              Grid.RowSpan="6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                        </Grid>
+
+                        <TextBlock Name="lblS0"
+                           Text="       So   "
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Grid.Row="13"
+                           Grid.Column="0"/>
+                
+            <Grid Name="gridtfS0"
+                  Grid.Row="13"
+                  Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.9*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Name="tfS0"
+                         GotFocus="tfS0_GotFocus"
+                         IsReadOnly="True"
+                         Width="100"
+                         Background="AliceBlue"
+                         Foreground="Black"       
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center"
+                         Grid.Row="0"
+                         Grid.Column="0"/>
+
+                <TextBlock Name="lblS0mm2"
+                           Text=""
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="1"/>
+            </Grid>
+
+            <TextBlock Name="lblL0"
+                           Text="       Lo   "
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Grid.Row="14"
+                           Grid.Column="0"/>
+
+            <TextBlock Name="lblLc"
+                           Text="       Lc   "
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Grid.Row="15"
+                           Grid.Column="0"/>
+
+            <Grid Name="gridtfL0"
+                  Grid.Row="14"
+                  Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.9*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Name="tfL0"
+                         KeyDown="tfL0_KeyDown"
+                         Width="100"
+                         Background="AliceBlue"
+                         Foreground="Black"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center"
+                         Grid.Row="0"
+                         Grid.Column="0"/>
+
+                <TextBlock Name="lblL0mm"
+                           Text="mm"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="1"/>
+            </Grid>
+
+            <Grid Name="gridtfLc"
+                  Grid.Row="15"
+                  Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.9*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Name="tfLc"
+                         KeyDown="tfLc_KeyDown"
+                         Width="100"
+                         Background="AliceBlue"
+                         Foreground="Black"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center"
+                         Grid.Row="0"
+                         Grid.Column="0"/>
+
+                <TextBlock Name="lblLcmm"
+                           Text="mm"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="1"/>
+            </Grid>
+            <!-- </Grid>
+                </GroupBox> -->
+
+            <!--    <Grid Name="gridNapomena" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="lblNapomena"
+                       Text="    Napomena : "/>
+                    <RichTextBox Name="rtfNapomena"
+                         Width="360"
+                         Height="150"
+                         Grid.Row="2"/>
+                </Grid>-->
+            </Grid>
+
+    </Grid>
+</Window>

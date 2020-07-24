@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4339D245-E15F-4B94-8170-14B43506AC47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testTensileMachineGraphics</RootNamespace>
+    <AssemblyName>testTensileMachineGraphics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kidalica.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LJUDDotNet, Version=3.46.0.0, Culture=neutral, PublicKeyToken=9d6c109908595016, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\LabJack\Drivers\LJUDDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Derivation.cs" />
+    <Compile Include="E2E4CalculationAfterManualFitting.cs" />
+    <Compile Include="GraphicAnimation.xaml.cs">
+      <DependentUpon>GraphicAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MarkerTriangleCurrentValues.cs" />
+    <Compile Include="MessageBoxes\OfflineProgressInformation.xaml.cs">
+      <DependentUpon>OfflineProgressInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MicroStopwatch.cs" />
+    <Compile Include="NHardeningExponent.cs" />
+    <Compile Include="OnlineModeFolder\Input Data\ConditionsOfTesting.xaml.cs">
+      <DependentUpon>ConditionsOfTesting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\Input Data\GeneralData.xaml.cs">
+      <DependentUpon>GeneralData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\Input Data\MaterialForTesting.xaml.cs">
+      <DependentUpon>MaterialForTesting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\Input Data\PositionOfTube.xaml.cs">
+      <DependentUpon>PositionOfTube.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\Input Data\RemarkOfTesting.xaml.cs">
+      <DependentUpon>RemarkOfTesting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\LastCheckedRadioButtonInResultsInterface.cs" />
+    <Compile Include="OnlineModeFolder\OnlineFileHeader.xaml.cs">
+      <DependentUpon>OnlineFileHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\ResultsInterface.xaml.cs">
+      <DependentUpon>ResultsInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\ForceRanges.xaml.cs">
+      <DependentUpon>ForceRanges.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\ForceRangesOptions.cs" />
+    <Compile Include="Options\OptionsAnimation.xaml.cs">
+      <DependentUpon>OptionsAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsFooter.cs" />
+    <Compile Include="Options\OptionsForYungsModuo.xaml.cs">
+      <DependentUpon>OptionsForYungsModuo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsInAnimation.cs" />
+    <Compile Include="Options\OptionsInOnlineManagingOfTTM.cs" />
+    <Compile Include="Options\OptionsInOnlineModeChangeOfRAndE.cs" />
+    <Compile Include="Options\OptionsInPlottingMode.cs" />
+    <Compile Include="Options\OptionsOnlineChangeOfRAndE.xaml.cs">
+      <DependentUpon>OptionsOnlineChangeOfRAndE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsOnlineManagingOfTTM.xaml.cs">
+      <DependentUpon>OptionsOnlineManagingOfTTM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintScreen.xaml.cs">
+      <DependentUpon>PrintScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReDrawingInOfflineMode.cs" />
+    <Compile Include="Reports\FooterOptions.xaml.cs">
+      <DependentUpon>FooterOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LastInputOutputSavedData.cs" />
+    <Compile Include="Reports\PDFSampleReport.cs" />
+    <Compile Include="Reports\PDFSumReport.cs" />
+    <Compile Include="Reports\SumReportClasses\SumReportLastLoad.cs" />
+    <Compile Include="Reports\SumReportClasses\SumReportRecord.cs" />
+    <Compile Include="SensorSimulator.cs" />
+    <Compile Include="Windows\VelocityOfChangeParametersXY.xaml.cs">
+      <DependentUpon>VelocityOfChangeParametersXY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowForChosingPoints.xaml.cs">
+      <DependentUpon>WindowForChosingPoints.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowForNManualCalculation.xaml.cs">
+      <DependentUpon>WindowForNManualCalculation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowRp02DirectionManualFitting.xaml.cs">
+      <DependentUpon>WindowRp02DirectionManualFitting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowT3DirectionManualFitting.xaml.cs">
+      <DependentUpon>WindowT3DirectionManualFitting.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GraphicAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicPlotting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataReader.cs" />
+    <Compile Include="GraphicPlotting.xaml.cs">
+      <DependentUpon>GraphicPlotting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MessageBoxes\OfflineProgressInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\Input Data\ConditionsOfTesting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\Input Data\GeneralData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\Input Data\MaterialForTesting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\Input Data\PositionOfTube.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\Input Data\RemarkOfTesting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\OnlineFileHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\OnlineMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnlineModeFolder\ResultsInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\ForceRanges.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Options\OptionsAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\OptionsForYungsModuo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\OptionsOnline.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\OptionsOnlineChangeOfRAndE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\OptionsOnlineManagingOfTTM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Options\OptionsPlotting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrintScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reports\FooterOptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\VelocityOfChangeParametersXY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowForChosingPoints.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowForNManualCalculation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowRp02DirectionManualFitting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowT3DirectionManualFitting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MessageBoxes\MessageOnlineModeYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessageOnlineModeYesNo.Designer.cs">
+      <DependentUpon>MessageOnlineModeYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\SaveDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\SaveDialogForm.Designer.cs">
+      <DependentUpon>SaveDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineModeFolder\OnlineMode.xaml.cs">
+      <DependentUpon>OnlineMode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsInOnlineMode.cs" />
+    <Compile Include="Options\OptionsOnline.xaml.cs">
+      <DependentUpon>OptionsOnline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsPlotting.xaml.cs">
+      <DependentUpon>OptionsPlotting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PointViewModel\MyPointCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="MessageBoxes\MessageOnlineModeYesNo.resx">
+      <DependentUpon>MessageOnlineModeYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\SaveDialogForm.resx">
+      <DependentUpon>SaveDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicDataDisplay\DynamicDataDisplay.csproj">
+      <Project>{ECD37682-DF7E-409F-912D-0965634556B5}</Project>
+      <Name>DynamicDataDisplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PdfFileWriter\PdfFileWriter.csproj">
+      <Project>{6869DC9C-6D07-44F1-886B-EF0050F95F99}</Project>
+      <Name>PdfFileWriter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kidalica.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

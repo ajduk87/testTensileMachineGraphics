@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OnlineHeader>
+  <OnlineHeaderLastWritten>
+    <tfOperator_GeneralData>S.Stevanovic </tfOperator_GeneralData>
+    <tfBrZbIzvestaja_GeneralData>21.07.2020</tfBrZbIzvestaja_GeneralData>
+    <tfBrUzorka_GeneralData>400/4</tfBrUzorka_GeneralData>
+    <tfSarza_GeneralData>400</tfSarza_GeneralData>
+    <tfRadniNalog_GeneralData></tfRadniNalog_GeneralData>
+    <tfNaručilac_GeneralData>livnica</tfNaručilac_GeneralData>
+    <tfStandard_ConditionsOfTesting>SRPS EN </tfStandard_ConditionsOfTesting>
+    <tfMetoda_ConditionsOfTesting>B</tfMetoda_ConditionsOfTesting>
+    <tfStandardZaN_ConditionsOfTesting></tfStandardZaN_ConditionsOfTesting>
+    <tfMasina_ConditionsOfTesting>P20 SSSR</tfMasina_ConditionsOfTesting>
+    <tfBegOpsegMasine_ConditionsOfTesting>80</tfBegOpsegMasine_ConditionsOfTesting>
+    <tfTemperatura_ConditionsOfTesting>20</tfTemperatura_ConditionsOfTesting>
+    <rbtnYes_ConditionsOfTesting>False</rbtnYes_ConditionsOfTesting>
+    <rbtnNo_ConditionsOfTesting>True</rbtnNo_ConditionsOfTesting>
+    <tfProizvodjac_MaterialForTesting></tfProizvodjac_MaterialForTesting>
+    <tfDobavljac_MaterialForTesting>LIVNICA</tfDobavljac_MaterialForTesting>
+    <tfPolazniKvalitet_MaterialForTesting>g22</tfPolazniKvalitet_MaterialForTesting>
+    <tfNazivnaDebljina_MaterialForTesting></tfNazivnaDebljina_MaterialForTesting>
+    <rbtnValjani_MaterialForTesting>False</rbtnValjani_MaterialForTesting>
+    <rbtnVučeni_MaterialForTesting>True</rbtnVučeni_MaterialForTesting>
+    <rbtnKovani_MaterialForTesting>False</rbtnKovani_MaterialForTesting>
+    <rbtnLiveni_MaterialForTesting>False</rbtnLiveni_MaterialForTesting>
+    <rbtnEpvOblikObradjena>True</rbtnEpvOblikObradjena>
+    <rbtnEpvOblikNeobradjena>False</rbtnEpvOblikNeobradjena>
+    <rbtnEpvTipProporcionalna>True</rbtnEpvTipProporcionalna>
+    <rbtnEpvTipNeproporcionalna>False</rbtnEpvTipNeproporcionalna>
+    <rbtnEpvK1>True</rbtnEpvK1>
+    <rbtnEpvK2>False</rbtnEpvK2>
+    <rbtnEpvVrstaPravougaona>False</rbtnEpvVrstaPravougaona>
+    <rbtnEpvVrstaKruzni>True</rbtnEpvVrstaKruzni>
+    <D>10.01</D>
+    <rbtnEpvVrstaCevasti>False</rbtnEpvVrstaCevasti>
+    <rbtnEpvVrstaDeocev>False</rbtnEpvVrstaDeocev>
+    <rbtnEpvVrstaSestaugaona>False</rbtnEpvVrstaSestaugaona>
+    <tfS0>78.697</tfS0>
+    <tfL0>50.00</tfL0>
+    <tfLc>61.81</tfLc>
+    <tfCustomPravacValjanja_PositionOfTube></tfCustomPravacValjanja_PositionOfTube>
+    <tfCustomSirinaTrake_PositionOfTube></tfCustomSirinaTrake_PositionOfTube>
+    <tfCustomDuzinaTrake_PositionOfTube></tfCustomDuzinaTrake_PositionOfTube>
+    <rtfNapomena_RemarkOfTesting></rtfNapomena_RemarkOfTesting>
+  </OnlineHeaderLastWritten>
+</OnlineHeader>

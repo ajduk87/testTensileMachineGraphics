@@ -1,0 +1,791 @@
+﻿<UserControl x:Class="testTensileMachineGraphics.OnlineModeFolder.OnlineMode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="1650">
+
+    <Grid Name="gridTab1"  Background="{StaticResource Gradient5}">
+
+        <Grid.Resources>
+
+            <Style TargetType="{x:Type Menu}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+            <Style TargetType="{x:Type MenuItem}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="Background"  Value="LightBlue"/>
+                <Setter Property="Foreground"  Value="Black"/>
+            </Style>
+
+           
+
+
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" MaxWidth="10" />
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="10" MaxWidth="10" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="gridonlineGraphic" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="50" MinHeight="50" MaxHeight="50"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+
+            <Menu  Width="Auto" 
+                   Height="24"
+                   Grid.Column="1" 
+                   Grid.Row="0"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left">
+                <MenuItem Name="menuIOnlineMain" 
+                          Header="Opcije online moda" 
+                          BorderThickness="2">
+                    <MenuItem Name="menuIshowOnlineOptions" 
+                              Header="Podešavanje opcija online moda"
+                              Cursor="Hand"
+                              Click="showOnlineOptions_Click"/>
+                    <Separator HorizontalAlignment="Left" Width="2"/>
+                    <MenuItem Name ="menuIshowGraphicChangeOfParameters" 
+                              Header="Prikaz grafika promene napona i izduženja"
+                              Cursor="Hand"
+                              Click="menuIshowGraphicChangeOfParameters_Click"/>
+                    <MenuItem Name ="menuIshowOptionsChangeOfParameters" 
+                              Header="Podešavanje opcija grafika promene napona i izduženja"
+                              Cursor="Hand"
+                              Click="menuIshowOptionsChangeOfParameters_Click"/>
+                    <Separator HorizontalAlignment="Left" Width="2"/>
+                    <MenuItem Name ="menuIshowOptionsManagingOfTTM" 
+                              Header="Podešavanje opcija upravljanja kidalicom"
+                              Cursor="Hand"
+                              Click="menuIshowOptionsManagingOfTTM_Click"/>
+                </MenuItem >
+            </Menu>
+
+            <Grid Name="gridForButtons" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" MaxWidth="150" />
+                    <ColumnDefinition Width="260" MaxWidth="260"/>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="25" MaxWidth="25" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="10" />
+                    
+                    <ColumnDefinition Width="270" />
+                    <ColumnDefinition Width="25" MaxWidth="25" />
+                    <ColumnDefinition Width="270" MaxWidth="270" />
+                    <ColumnDefinition Width="25" MaxWidth="25"/>
+                    <ColumnDefinition Width="270" MaxWidth="270" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                    <Button Name="btnSampleData"
+                        Width="250"
+                        Height="30"
+                        FontSize="18"
+                        FontWeight="Bold"
+                        Content="   PODACI O UZORKU    "
+                        Click="btnSampleData_Click"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Grid.Column="1"/>
+                </Border>
+
+                <Border Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush2}" BorderThickness="5" Background="GreenYellow">
+                    <Button Name="btnStartSample"
+                        Width="250"
+                        Height="30"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Background="LawnGreen"
+                        Foreground="Snow"
+                        Grid.Column="7"
+                        Content=">"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Click="btnStartSample_Click"/>
+                </Border>
+
+                <CheckBox Name="chbStartSampleShowChangedPar"
+                      Width="15"
+                      Grid.Column="8"
+                      ToolTip="Prikaži grafike promene napona i izduženja"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Left"/>
+
+                <Border Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush3}" BorderThickness="5" Background="OrangeRed">
+                    <Button Name="btnStopSample"
+                        Width="250"
+                        Height="30"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Background="Red"
+                        Foreground="Snow"
+                        Grid.Column="9"
+                        Content="//"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Click="btnStopSample_Click"/>
+                </Border>
+
+
+                <Border Grid.Column="11"  HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                    <Button Name="btnSetTlb"
+                        Width="250"
+                        Height="30"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Grid.Column="9"
+                        Content="Nuliraj TLB"
+                        Visibility="Collapsed"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Click="btnSetTlb_Click"/>
+                </Border>
+
+
+
+            </Grid>
+
+            <Grid Name="gridLabelForButton_btnSampleData" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" MaxWidth="150" />
+                    <ColumnDefinition Width="260" MaxWidth="260"/>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="25" MaxWidth="25" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="10" />
+
+                    <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="55" MaxWidth="55" />
+                    <ColumnDefinition Width="130" MaxWidth="130" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock  Grid.Column="1" 
+                            Name="tfRemarkOnlineFileHeaderWritten"
+                            Text="Nisu uneti podaci o uzorku!!!"
+                            Foreground="Red"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Height="20"
+                            Width="180"/>
+
+            </Grid>
+
+
+            <Label  Name="lblOnlineStatus" 
+                    Content="Online mod je iskljucen"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    FontSize="14"/>
+
+            <d3:ChartPlotter x:Name="plotter" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Background="Snow" MinHeight="750" MaxHeight="750" MinWidth="1330" MaxWidth="1330">
+                <d3:MarkerPointsGraph Name="_MarkerGraph"/>
+                <d3:Header Name="Header" FontFamily="Times New Roman" Content="Grafik"/>
+                <d3:VerticalAxisTitle FontFamily="Times New Roman" Content="R [MPa]" />
+                <d3:HorizontalAxisTitle FontFamily="Times New Roman" Content="e [%]"/>
+                <!--<d3:HorizontalLine Value="{Binding MaxVoltage}" Stroke="Red" StrokeThickness="2"/>
+            <d3:HorizontalLine Value="{Binding MinVoltage}" Stroke="Red" StrokeThickness="2"/>-->
+            </d3:ChartPlotter>
+
+           
+            
+            <Grid Name="gridLabelsParameters"
+                  Grid.Row="7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="69*" />
+                    <RowDefinition Height="16*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="35" MaxWidth="35"/>
+                    <ColumnDefinition Width="*" MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="110" MaxWidth="110"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="35" MaxWidth="35"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="1" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="3" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="5" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="7" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="9" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="11" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="13" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="15" Grid.ColumnSpan="3" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                <Border Grid.Column="19" Grid.ColumnSpan="3" Margin="1,0,1,1" BorderBrush="LightSkyBlue" BorderThickness="5" Background="LightGray" Height="Auto" SnapsToDevicePixels="True" Grid.RowSpan="2" />
+                
+
+                    <TextBlock Name="lblForceInN"
+                               Text="Sila        [kN]"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               Grid.Column="1"  
+                               Width="55" 
+                               Height="35" 
+                               Grid.RowSpan="2" />
+       
+
+                <TextBlock Name="lblMaxForceInKN"
+                           Margin="10,8,0,3"
+                           Text="Max sila"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="3" 
+                           Width="66" Height="30" />
+                <TextBlock Name="lblMaxForceInKN2"
+                           Margin="14,22,0,8"
+                           Text="[kN]"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="3" 
+                           Width="42" 
+                           Grid.RowSpan="2" 
+                           Height="20" />
+
+                <!--<TextBlock Name="lblElongationForMaxForce"
+                           MinHeight="65"
+                           Width="70"
+                           Visibility="Hidden"
+                           Text="Izduženje [%]         [Max sila]:"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="7"/>-->
+
+                <TextBlock Name="lblPreassureInMPa"
+                           Margin="10,0,0,0"
+                           Width="55"
+                           TextWrapping="Wrap"
+                           Text ="  Napon "
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="5" 
+                           Grid.RowSpan="2" 
+                           Height="35" />
+
+                <TextBlock Name="lblPreassureInMPa2"
+                           Margin="18,22,0,8"
+                           Width="47"
+                           TextWrapping="Wrap"
+                           Text ="[MPa]"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="5" 
+                           Grid.RowSpan="2" 
+                           Height="20" />
+
+                <TextBlock Name="lblElongationInMM"
+                           Margin="20,8,0,17"
+                           Width="65"
+                           TextWrapping="Wrap"
+                           Text="Izduženje"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="7" 
+                           Height="16" />
+
+                <TextBlock Name="lblElongationInMM2"
+                           Margin="29,22,0,8"
+                           Width="46"
+                           TextWrapping="Wrap"
+                           Text="[mm]"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="7" 
+                           Height="20" 
+                           Grid.RowSpan="2" />
+
+
+                <TextBlock Name="lblElongationInProcent"
+                           Margin="17,3,0,25"
+                           Width="78"
+                           TextWrapping="Wrap"
+                           Text ="Izduženje"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="9" 
+                           Height="13" />
+
+                <TextBlock Name="lblElongationInProcent2"
+                           Margin="36,22,0,3"
+                           Width="40"
+                           TextWrapping="Wrap"
+                           Text ="[%]"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="9" 
+                           Height="16" />
+
+                <TextBlock Name="lblDeltaPreassure"
+                           Margin="16,3,0,25"
+                           Width="79"
+                           TextWrapping="Wrap"
+                           Text="Pr napona"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="11" 
+                           Height="13" />
+                <TextBlock Name="lblDeltaPreassure2"
+                           Margin="23,22,0,3"
+                           Width="60"
+                           TextWrapping="Wrap"
+                           Text="[MPa/s]"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="11" 
+                           Height="16" />
+
+                <TextBlock Name="lblMaxDeltaPreassure"
+                           Margin="20,1,0,17"
+                           Width="91"
+                           TextWrapping="Wrap"
+                           Text="Max pr nap"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="13" 
+                           Height="23" Grid.ColumnSpan="2" />
+
+                <TextBlock Name="lblMaxDeltaPreassure2"
+                           Margin="29,22,0,3"
+                           Width="82"
+                           TextWrapping="Wrap"
+                           Text="[MPa/s]"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="13" 
+                           Height="16" Grid.ColumnSpan="2" />
+
+                <!--<TextBlock Name="lblElongationMaxPreassure"
+                           MinHeight="65"
+                           Width="70"
+                           TextWrapping="Wrap"
+                           Text="Izduženje [%] :"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="15"/>-->
+
+
+                <TextBlock Name="lblDeltaElongation"
+                           Margin="40,3,0,17"
+                           Width="120"
+                           TextWrapping="Wrap"
+                           Text ="Brzina traverze Vc"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="15" 
+                           Grid.ColumnSpan="3" 
+                           Height="21" />
+
+                <TextBlock Name="lblDeltaElongation2"
+                           Margin="72,22,0,3"
+                           Width="99"
+                           TextWrapping="Wrap"
+                           Text ="[mm/s]"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="15" 
+                           Grid.ColumnSpan="3" 
+                           Height="16" />
+
+                <TextBlock Name="lblMaxDeltaElongation"
+                           Margin="31,8,0,17"
+                           Width="145"
+                           TextWrapping="Wrap"
+                           Text ="Max brzina traverze Vc"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="19"
+                           Grid.ColumnSpan="3" Height="16" />
+
+                <TextBlock Name="lblMaxDeltaElongation2"
+                           Margin="67,22,0,8"
+                           Width="111"
+                           TextWrapping="Wrap"
+                           Text ="[mm/s]"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Grid.Column="19"
+                           Grid.ColumnSpan="3" 
+                           Grid.RowSpan="2" 
+                           Height="20" />
+
+                <!--<TextBlock Name="lblPreassureMaxElongation"
+                           MinHeight="65"
+                           Width="70"
+                           TextWrapping="Wrap"
+                           Text="Napon [MPa] :"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                            Grid.Column="21"/>-->
+
+            </Grid>
+
+            
+            <Grid Name="gridTextboxParameters"
+                  Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="35" MaxWidth="35"/>
+                    <ColumnDefinition Width="*" MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="100" MaxWidth="100"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="110" MaxWidth="110"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="*"  MinWidth="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="35" MaxWidth="35"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Name="tfForceInN"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="1"
+                         Background="Beige"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         IsReadOnly="True"/>
+
+                <TextBox Name="tfMaxForceInKN"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="3"
+                         Background="Beige"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         IsReadOnly="True"/>
+
+                <!--<TextBox Name="tfElongationForMaxForce"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="7"
+                         Background="Bisque"
+                         Visibility="Hidden"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         IsReadOnly="True"/>-->
+
+                <TextBox Name="tfPreassureInMPa"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="5"
+                         Foreground="AliceBlue"
+                         Background="Black"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         IsReadOnly="True"/>
+
+
+                <TextBox Name="tfElongationInMM"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="7"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Foreground="AliceBlue"
+                         Background="Black"
+                         IsReadOnly="True"/>
+
+                <TextBox Name="tfElongationInProcent"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="9"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Foreground="AliceBlue"
+                         Background="Black"
+                         IsReadOnly="True"/>
+
+                <TextBox Name="tfDeltaPreassure"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="11"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Foreground="Bisque"
+                         Background="DarkBlue"
+                         IsReadOnly="True"  />
+
+
+                <TextBox Name="tfMaxDeltaPreassure"
+                         Text="0.0"
+                         FontSize="20"
+                         Grid.Column="13"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Foreground="Bisque"
+                         Background="DarkBlue"
+                         IsReadOnly="True"/>
+
+
+                <!--<TextBox Name="tfElongationMaxPreassure"
+                         Grid.Column="15"
+                         Text="0.0"
+                         FontSize="20"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Background="Bisque"
+                         IsReadOnly="True"/>-->
+
+                <TextBox Name="tfDeltaElongation"
+                         Grid.Column="15"
+                         Grid.ColumnSpan="3"
+                         Text="0.0"
+                         FontSize="20"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         BorderBrush="Black"
+                         Foreground="Black"
+                         Background="Aqua"
+                         IsReadOnly="True"/>
+
+                <TextBox Name="tfMaxDeltaElongation"
+                         Grid.Column="19"
+                         Grid.ColumnSpan="3"
+                         Text="0.0"
+                         FontSize="20"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         BorderBrush="Black"
+                         Foreground="Black"
+                         Background="Aqua"
+                         IsReadOnly="True"/>
+
+              <!--  <TextBox Name="tfPreassureMaxElongation"
+                         Grid.Column="21"
+                         Text="0.0"
+                         FontSize="20"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         Background="Bisque"
+                         IsReadOnly="True"/>-->
+
+
+            </Grid>
+
+           <!-- <Button Name="btnOnlineMode"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Width="150"
+                    Height="25"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="btnOnlineMode_Click"
+                    Content="Uključi online mode"/>-->
+        
+        </Grid>
+
+      <Grid Name="gridonlineoptions" Grid.Column="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="170" />
+                <ColumnDefinition Width="20" MaxWidth="20" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" MaxHeight="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10" MaxHeight="10"/>
+                <RowDefinition Height="25" MaxHeight="25"/>
+                <RowDefinition Height="10" MaxHeight="10"/>
+            </Grid.RowDefinitions>
+
+
+           <Button Name="btnEnterNewSample"
+                   Visibility="Hidden"
+                   Width="120"
+                   Grid.Column="1"
+                   Grid.Row="4"
+                   Content="Novo merenje"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Click="btnEnterNewSample_Click"/>
+
+           <!-- <Button Name="btnStartSample"
+                    Width="120"
+                    Background="LawnGreen"
+                    Foreground="Snow"
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    Content=">"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Click="btnStartSample_Click"/>-->
+
+          <!--  <CheckBox Name="chbStartSampleShowChangedPar"
+                      Width="15"
+                      Grid.Column="2"
+                      Grid.Row="6"
+                      ToolTip="Prikaži grafike promene napona i izduženja"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Left"/> -->
+
+          <!--  <Button Name="btnStopSample"
+                    Width="120"
+                    Background="Red"
+                    Foreground="Snow"
+                    Grid.Column="1"
+                    Grid.Row="8"
+                    Content="//"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Click="btnStopSample_Click"/> -->
+
+            <Button Name="btnSaveSample"
+                    Visibility="Hidden"
+                    Width="120"
+                    Grid.Column="1"
+                    Grid.Row="10"
+                    Content="Zapamti"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    
+                    Click="btnSaveSample_Click"/>
+
+           <!-- <Button Name="btnPrintSample"
+                    Width="120"
+                    Grid.Column="1"
+                    Grid.Row="12"
+                    Content="Štampaj"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Click="btnPrintSample_Click"/> -->
+
+
+           <!-- <Button Name="btnSampleData"
+                    Width="120"
+                    Content="   podaci o uzorku    "
+                    Click="btnSampleData_Click"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Grid.Row="14" 
+                    Grid.Column="1"/> -->
+
+            <Button Name="btnShowOnlineOptions"
+                    Visibility="Hidden"
+                    Width="130"
+                    Content="Opcije online moda"
+                    Grid.Column="1"
+                    Grid.Row="28"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="btnShowOnlineOptions_Click"/>
+
+
+            <Grid   Name="gridRemarkOnlineFileHeaderWritten"
+                        Grid.Column="1"
+                        Grid.Row="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="541" MaxWidth="700"/>
+                    <ColumnDefinition Width="159*"/>
+                </Grid.ColumnDefinitions>
+
+
+
+              <!--  <TextBlock  Grid.Column="1" 
+                            Name="tfRemarkOnlineFileHeaderWritten"
+                            Text="Nisu uneti podaci o uzorku!!!"
+                            Foreground="Red"
+                            FontSize="13"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Height="25"
+                            Width="160"/> -->
+
+            </Grid>
+
+
+    </Grid> 
+
+    </Grid>
+</UserControl>

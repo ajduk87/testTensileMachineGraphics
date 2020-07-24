@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OnlineMode>
+  <OnlineModeCurrentOptions>
+    <refreshTimeInterval>12</refreshTimeInterval>
+    <Resolution>10</Resolution>
+    <L0>50</L0>
+    <S0>1.131</S0>
+    <nutnDivide>1000000</nutnDivide>
+    <nutnMultiple>98068.9</nutnMultiple>
+    <mmDivide>10000</mmDivide>
+    <mmCoeff>-23.52</mmCoeff>
+    <mmDivideWithEkstenziometer>-1</mmDivideWithEkstenziometer>
+    <mmCoeffWithEkstenziometer>15.625</mmCoeffWithEkstenziometer>
+    <isAutoChecked>False</isAutoChecked>
+    <isManualChecked>True</isManualChecked>
+    <ratioElongation>99</ratioElongation>
+    <ratioForce>700</ratioForce>
+    <onlineWriteEndTimeInterval>2000</onlineWriteEndTimeInterval>
+    <calculateMaxForceForTf>True</calculateMaxForceForTf>
+    <timeIntervalForCalculationOfChangedParameters>1000</timeIntervalForCalculationOfChangedParameters>
+    <isE2E4BorderSelected>True</isE2E4BorderSelected>
+    <E2E4Border>0.95</E2E4Border>
+    <E3E4Border>0.95</E3E4Border>
+    <COM>10</COM>
+  </OnlineModeCurrentOptions>
+</OnlineMode>

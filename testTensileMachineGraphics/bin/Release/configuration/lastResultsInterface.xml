@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResultsInterface>
+  <ResultsInterfaceLastWritten>
+    <tfLu>52.3</tfLu>
+    <chbRp02>False</chbRp02>
+    <rbtnRp02>False</rbtnRp02>
+    <tfRp02></tfRp02>
+    <chbRt05>False</chbRt05>
+    <rbtnRt05>False</rbtnRt05>
+    <tfRt05></tfRt05>
+    <chbReL>True</chbReL>
+    <rbtnReL>False</rbtnReL>
+    <tfReL></tfReL>
+    <chbReH>True</chbReH>
+    <rbtnReH>False</rbtnReH>
+    <tfReH></tfReH>
+    <tfRm></tfRm>
+    <tfF></tfF>
+    <tfFm>4</tfFm>
+    <tfAg></tfAg>
+    <tfAgt>4.3</tfAgt>
+    <tfRRm></tfRRm>
+    <tfA>NaN</tfA>
+    <tfAt>4.6</tfAt>
+    <IsRectangle>False</IsRectangle>
+    <IsCircle>True</IsCircle>
+    <tfDu></tfDu>
+    <tfSu></tfSu>
+    <tfZ></tfZ>
+    <chbn>False</chbn>
+    <tfn>0.5774</tfn>
+    <chbRmax>False</chbRmax>
+    <tfRmaxWithPoint></tfRmaxWithPoint>
+    <chbe2>False</chbe2>
+    <e2Min></e2Min>
+    <e2Max></e2Max>
+    <e2Avg></e2Avg>
+    <chbe4>False</chbe4>
+    <e4Min></e4Min>
+    <e4Max></e4Max>
+    <e4Avg></e4Avg>
+    <chbRe>False</chbRe>
+    <tfRe>0</tfRe>
+    <chbE>False</chbE>
+    <tfE>0</tfE>
+  </ResultsInterfaceLastWritten>
+</ResultsInterface>

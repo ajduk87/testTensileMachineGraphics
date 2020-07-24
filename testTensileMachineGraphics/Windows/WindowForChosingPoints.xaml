@@ -1,0 +1,130 @@
+﻿<Window x:Class="testTensileMachineGraphics.Windows.WindowForChosingPoints"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Title="" Height="360" Width="160">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+
+
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="FontSize"  Value="18"/>
+            </Style>
+
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="18"/>
+            </Style>
+
+        </Grid.Resources>
+
+        <RadioButton Name="rbtnReH"
+                     Checked="rbtnReH_Checked"
+                     Unchecked="rbtnReH_Unchecked"
+                     Grid.Row="1" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="ReH"/>
+        <RadioButton Name="rbtnReL" 
+                     Checked="rbtnReL_Checked"
+                     Unchecked="rbtnReL_Unchecked"
+                     Grid.Row="2" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="ReL" />
+        <RadioButton Name="rbtnRp02" 
+                     Checked="rbtnRp02_Checked"
+                     Unchecked="rbtnRp02_Unchecked"
+                     Grid.Row="3" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="Rp02" />
+        <RadioButton Name="rbtnRm" 
+                     Checked="rbtnRm_Checked"
+                     Unchecked="rbtnRm_Unchecked"
+                     Grid.Row="4" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="Rm"/>
+        <RadioButton Name="rbtnA" 
+                     Checked="rbtnA_Checked"
+                     Unchecked="rbtnA_Unchecked"
+                     Grid.Row="5" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Visibility="Visible"
+                     Content="A"/>
+        <RadioButton Name="rbtnT1" 
+                     Checked="rbtnT1_Checked"
+                     Unchecked="rbtnT1_Unchecked"
+                     Grid.Row="6" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="T1"/>
+        <RadioButton Name="rbtnT2" 
+                     Grid.Row="7" 
+                     Checked="rbtnT2_Checked"
+                     Unchecked="rbtnT2_Unchecked"
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="T2"/>
+        <RadioButton Name="rbtnT3"
+                     Checked="rbtnT3_Checked"
+                     Unchecked="rbtnT3_Unchecked"
+                     Grid.Row="8" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="T3" />
+
+        <RadioButton Name="rbtnR2R4"
+                     Checked="rbtnR2R4_Checked"
+                     Unchecked="rbtnR2R4_Unchecked"
+                     Grid.Row="9" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Visibility="Hidden"
+                     Content="R2/R4" />
+        <!--<RadioButton Name="rbtnOriginal" 
+                     Checked="rbtnOriginal_Checked"
+                     Unchecked="rbtnOriginal_Unchecked"
+                     Grid.Row="9" 
+                     GroupName="PointForMoving" 
+                     VerticalAlignment="Center"
+                     Content="Original" />-->
+        
+        <CheckBox Name="chbOriginal"
+                  Checked="chbOriginal_Checked"
+                  Unchecked="chbOriginal_Unchecked"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Left"
+                  Content="Original"
+                  Grid.Row="10"/>
+
+        <CheckBox Name="chbChangeRatio"
+                  Checked="chbChangeRatio_Checked"
+                  Unchecked="chbChangeRatio_Unchecked"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Left"
+                  Content="Zumiranje"
+                  Visibility="Hidden"
+                  Grid.Row="11"/>
+
+    </Grid>
+</Window>

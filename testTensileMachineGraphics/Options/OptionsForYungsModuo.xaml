@@ -1,0 +1,195 @@
+﻿<Window x:Class="testTensileMachineGraphics.Options.OptionsForYungsModuo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="OptionsForYungsModuo" Height="350" Width="420">
+
+
+
+    <Grid Background="LightGray">
+
+        <Grid.Resources>
+
+            <Style TargetType="{x:Type Label}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBlock}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Foreground"  Value="White"/>
+                <Setter Property="Background"  Value="Black"/>
+            </Style>
+
+        </Grid.Resources>
+
+      
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" MaxHeight="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="28"/>
+                <RowDefinition Height="28"/>
+                <RowDefinition Height="28"/>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="28"/>
+                <RowDefinition Height="28"/>
+                <RowDefinition Height="28"/>
+        </Grid.RowDefinitions>
+
+
+        <Label Name="lblYungCaption1" 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="   Opcije za racunanje    "/>
+
+        <Label Name="lblYungCaption2" 
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="Jungovog modula elasticnosti"/>
+
+        <Label Name="lblYungLegend" 
+                   Grid.Column="1"
+                   Grid.Row="4"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="Legenda : "/>
+
+       
+
+            <Label Name="lblxelas1" 
+                   Grid.Column="1"
+                   Grid.Row="5"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="Xelas - očekivana granica elastičnosti po x-osi"/>
+
+            <Label Name="lblxelas2" 
+                       Grid.Column="1"
+                       Grid.Row="6"
+                       Visibility="Visible"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Content="Yelas - vrednost napona u MPa kojem odgovara Xelas"/>
+
+
+        <Grid Name="gridforXelas"  Grid.Column="1" Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label Name="lblxelas" 
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Content="Xelas  :  "/>
+
+
+            <TextBox      Grid.Column="2"
+                          Name="tfXelas"
+                          TextChanged="tfXelas_TextChanged"
+                          KeyDown="tfXelas_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+            <Label      Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblEndtfXelas"
+                        Content="[%]"/>
+
+        </Grid>
+
+        <Grid Name="gridforprocspustanja"  Grid.Column="1" Grid.Row="8" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label Name="lblprocspustanja" 
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Content="Pr. spustanja  :  "/>
+
+
+            <TextBox      Grid.Column="2"
+                          Name="tfprocspustanja"
+                          TextChanged="tfprocspustanja_TextChanged"
+                          KeyDown="tfprocspustanja_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+            <Label      Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblprocspustanjaend"
+                        Content="[%]"/>
+
+        </Grid>
+
+        <Label Name="lblyung1" 
+                   Grid.Column="1"
+                   Grid.Row="10"
+                   FontWeight="Bold"
+                   Visibility="Visible"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="granica elasticnosti [Re] = (100-Pr. spustanja)/100*Yelas"/>
+
+    </Grid>
+</Window>

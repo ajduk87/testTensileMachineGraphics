@@ -1,0 +1,47 @@
+﻿<Window x:Class="testTensileMachineGraphics.OnlineModeFolder.Input_Data.RemarkOfTesting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="CanResize"
+        Closed="Window_Closed"
+        Title="NAPOMENA" Height="175" Width="280">
+    <Grid Background="SkyBlue">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="*"/>
+            <!-- <RowDefinition Height="26"/> -->
+        </Grid.RowDefinitions>
+        
+        <TextBlock Name="tblNapomena"
+                   Text="Napomena :"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Grid.Column="1"
+                   Grid.Row="1"/>
+        
+        <RichTextBox Name="rtfNapomena"
+                     Style="{StaticResource richtextboxStyle1}"
+                     MouseEnter="rtfNapomena_MouseEnter"
+                     Width="Auto"
+                     Height="100"
+                     Grid.Column="1"
+                     Grid.Row="2"/>
+    </Grid>
+</Window>

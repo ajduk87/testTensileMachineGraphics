@@ -1,0 +1,1159 @@
+﻿<Window x:Class="testTensileMachineGraphics.OnlineModeFolder.ResultsInterface"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="IZLAZNI PODACI" Height="700" Width="280">
+    <Grid Background="LemonChiffon">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+        </Grid.Resources>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="180"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="gridLuLeftPart" Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Name="lblLu"
+                       Text="Lu"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+        </Grid>
+
+        <Grid Name="gridLuRightPart" Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox Name="tfLu"
+                     Style="{StaticResource textboxStyle1}"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     KeyDown="tfLu_KeyDown"
+                     MouseEnter="tfLu_MouseEnter"
+                     IsReadOnly="False"
+                     />
+            <TextBlock Name="tblLuMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" mm"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridRp02LeftPart" Grid.Row="3" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="R" 
+                        Name="rbtnRp02"
+                        Width="15"
+                        GotFocus="rbtnRp02_GotFocus" 
+                        Checked="rbtnRp02_Checked"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Grid.Column="0"/>
+
+            <TextBlock Name="lblRp02"
+                       Text="Rp02"
+                       FontSize="13.5"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbRp02"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbRp02_GotFocus"
+                      Checked="chbRp02_Checked"
+                      Unchecked="chbRp02_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+
+        <Grid Name="gridRp02RightPart" Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRp02"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRp02_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     TextChanged="tfRp02_TextChanged"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblRp02Measure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+        <Grid Name="gridRt05LeftPart" Grid.Row="5" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="30*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="R" 
+                             Name="rbtnRt05"
+                             Width="15"
+                             GotFocus="rbtnRt05_GotFocus"
+                             Checked="rbtnRt05_Checked"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Grid.Column="0"/>
+
+            <TextBlock Name="lblRt05"
+                       Text="Rt05"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbRt05"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbRt05_GotFocus"
+                      Checked="chbRt05_Checked"
+                      Unchecked="chbRt05_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Name="gridRt05RightPart" Grid.Row="5" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRt05"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRt05_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblRt05Measure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+        <Grid Name="gridReLLeftPart" Grid.Row="7" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="R" 
+                             Name="rbtnReL"
+                             Width="15"
+                             GotFocus="rbtnReL_GotFocus"
+                             Checked="rbtnReL_Checked"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Grid.Column="0"/>
+
+            <TextBlock Name="lblReL"
+                       Text="ReL"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbReL"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbReL_GotFocus"
+                      Checked="chbReL_Checked"
+                      Unchecked="chbReL_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Name="gridReLRightPart" Grid.Row="7" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfReL"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfReL_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     TextChanged="tfReL_TextChanged"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblReLMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+        <Grid Name="gridReHLeftPart" Grid.Row="9" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="R" 
+                             Name="rbtnReH"
+                             Width="15"
+                             GotFocus="rbtnReH_GotFocus"
+                             Checked="rbtnReH_Checked"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Grid.Column="0"/>
+
+            <TextBlock Name="lblReH"
+                       Text="ReH"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbReH"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbReH_GotFocus"
+                      Checked="chbReH_Checked"
+                      Unchecked="chbReH_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Name="gridReHRightPart" Grid.Row="9" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfReH"
+                     Style="{StaticResource textboxStyle1}" VerticalAlignment="Bottom"
+                     GotFocus="tfReH_GotFocus"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     TextChanged="tfReH_TextChanged" Margin="0,0,0,2" />
+            <TextBlock Name="tblReHMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+        <Grid Name="gridRmLeftPart" Grid.Row="11" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblRm"
+                       Text="Rm"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+         
+        </Grid>
+
+        <Grid Name="gridRmRightPart" Grid.Row="11" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRm"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRm_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     TextChanged="tfRm_TextChanged"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblRmMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridRRmtLeftPart" Grid.Row="13" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.6*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblRRm"
+                       Text="R/Rm"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridRRmRightPart" Grid.Row="13" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRRm"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRRm_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     TextChanged="tfRRm_TextChanged"
+                     />
+
+        </Grid>
+
+        <Grid Name="gridFLeftPart" Grid.Row="15" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblF"
+                       Text="F"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridFRightPart" Grid.Row="15" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfF"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfF_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     TextChanged="tfF_TextChanged"
+                     />
+            <TextBlock Name="tblFMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" N"
+                       />
+        </Grid>
+
+        <Grid Name="gridFmLeftPart" Grid.Row="17" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblFm"
+                       Text="Fm"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridFmRightPart" Grid.Row="17" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfFm"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfFm_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     TextChanged="tfFm_TextChanged"
+                     />
+            <TextBlock Name="tblFmMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" N"
+                       />
+        </Grid>
+
+        <Grid Name="gridAgLeftPart" Grid.Row="19" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblAg"
+                       Text="Ag"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridAgRightPart" Grid.Row="19" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfAg"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfAg_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblAgMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" %"
+                       />
+        </Grid>
+
+        <Grid Name="gridAgtLeftPart" Grid.Row="21" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblAgt"
+                       Text="Agt"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridAgtRightPart" Grid.Row="21" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfAgt"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfAgt_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblAgtMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" %"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridALeftPart" Grid.Row="23" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblA"
+                       Text="A"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridARightPart" Grid.Row="23" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfA"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfA_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     TextChanged="tfA_TextChanged"
+                     />
+            <TextBlock Name="tblAMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" %"
+                       />
+        </Grid>
+
+        <Grid Name="gridAtLeftPart" Grid.Row="25" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblAt"
+                       Text="At"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridAtRightPart" Grid.Row="25" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfAt"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfAt_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblAtMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" %"
+                       />
+        </Grid>
+
+     
+
+
+
+
+  
+        <Grid Name="gridSuLeftPart" Grid.Row="27" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblSu"
+                       Text="Su"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridSuRightPart" Grid.Row="27" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfSu"
+                     Width="90"
+                     Height="24"
+                     Style="{StaticResource textboxStyle1}"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     TextChanged="tfSu_TextChanged"
+                     KeyDown="tfSu_KeyDown"
+                     GotFocus="tfSu_GotFocus"
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblSuMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridrLeftPart" Grid.Row="29" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="lblZ"
+                       Text="Z"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid Name="gridrRightPart" Grid.Row="29" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfZ"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfZ_GotFocus" VerticalAlignment="Bottom"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True" Margin="0,0,0,2" />
+            <TextBlock Name="tblZMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" %"
+                       />
+        </Grid>
+
+        <Grid Name="gridnLeftPart" Grid.Row="31" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="lbln"
+                       Text="n"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbn"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbn_GotFocus"
+                      Checked="chbn_Checked"
+                      Unchecked="chbn_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Name="gridnRightPart" Grid.Row="31" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfn"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfn_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+        </Grid>
+
+        <Grid Name="gridTextboxsLeftPartUp" Grid.Row="33" Grid.Column="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+
+        <Grid Name="gridTextboxsRightPartUp" Grid.Row="33" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+          
+        </Grid>
+
+        <Grid Name="gridTextboxsLeftPartDown" Grid.Row="35" Grid.Column="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+
+        <Grid Name="gridTextboxsRightPartDown" Grid.Row="35" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+
+        <Grid Name="gridChangeRmaxLeftPart" Grid.Row="37" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="0.6*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="lblRmaxPoint"
+                       FontSize="22"
+                       Margin="1,-4,0,-6"
+                       Text="."
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+            <TextBlock Name="lblRmax"
+                       Text="Rmax"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Grid.Row="1"
+                       Margin="0,-4,0,0"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbRmax"
+                      Width="15"
+                      Grid.Column="2"
+                      Grid.Row="1"
+                      GotFocus="chbRmax_GotFocus"
+                      Checked="chbRmax_Checked"
+                      Unchecked="chbRmax_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Bottom"/>
+
+
+        </Grid>
+
+        <Grid Name="gridChangeRmaxRightPart" Grid.Row="37" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRmax"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRmax_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Bottom"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+
+            <TextBlock Name="tblRmaxMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Text=" MPa/s"
+                       FontWeight="Bold"
+                       FontSize="14"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridChangeE2LeftPart" Grid.Row="39" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="lblE2Point"
+                       Visibility="Hidden"
+                       FontSize="22"
+                       Margin="1,0,0,-6"
+                       Text="."
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+            <Grid Name="gridLabelE2" Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="lblE2"
+                       Text="Vc"
+                       FontSize="14"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="0"/>
+                <TextBlock Name="lblE2Part2"
+                           Margin="0,0,0,-6"
+                           Text="(R2)"
+                           FontSize="10"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Grid.Column="1"/>
+            </Grid>
+
+            <CheckBox Name="chbe2"
+                      Width="15"
+                      Grid.Column="2"
+                      Grid.Row="1"
+                      GotFocus="chbe2_GotFocus"
+                      Checked="chbe2_Checked"
+                      Unchecked="chbe2_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Bottom"/>
+
+        </Grid>
+
+        <Grid Name="gridChangeE2RightPart" Grid.Row="39" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <!-- <ColumnDefinition Width="2*"/>-->
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfE2"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfE2_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Bottom"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+
+
+            <TextBlock Name="tblE2Measure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Text=" mm/s"
+                        FontWeight="Bold"
+                       FontSize="14"
+                       />
+        </Grid>
+
+
+        <Grid Name="gridChangeE4LeftPart" Grid.Row="41" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="lblE4Point"
+                       Visibility="Hidden"
+                       FontSize="22"
+                       Margin="1,0,0,-6"
+                       Text="."
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+            <Grid Name="gridLabelE4" Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="lblE4"
+                       Text="Vc"
+                       FontSize="14"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="0"/>
+                <TextBlock Name="lblE4Part2"
+                            Margin="0,0,0,-6"
+                           Text="(R4)"
+                           FontSize="10"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Grid.Column="1"/>
+            </Grid>
+
+
+            <CheckBox Name="chbe4"
+                      Width="15"
+                      Grid.Column="2"
+                      Grid.Row="1"
+                      GotFocus="chbe4_GotFocus"
+                      Checked="chbe4_Checked"
+                      Unchecked="chbe4_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Bottom"/>
+        </Grid>
+
+        <Grid Name="gridChangeE4RightPart" Grid.Row="41" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <!-- <ColumnDefinition Width="2*"/>-->
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfE4"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfE4_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Bottom"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+                     IsReadOnly="True"
+                     />
+
+
+            <TextBlock Name="tblE4Measure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Text=" mm/s"
+                       FontWeight="Bold"
+                       FontSize="14"
+                       />
+        </Grid>
+
+        <Grid Name="gridReLeftPart" Grid.Row="43" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="lblRe"
+                       Text="Re"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbRe"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbRe_GotFocus"
+                      Checked="chbRe_Checked"
+                      Unchecked="chbRe_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Name="gridReRightPart" Grid.Row="43" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfRe"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfRe_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+             
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblReMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+        <Grid Name="gridELeftPart" Grid.Row="45" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="lblE"
+                       Text="E"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Grid.Column="1"/>
+
+            <CheckBox Name="chbE"
+                      Width="15"
+                      Grid.Column="2"
+                      GotFocus="chbE_GotFocus"
+                      Checked="chbE_Checked"
+                      Unchecked="chbE_Unchecked"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Grid>
+
+
+        <Grid Name="gridERightPart" Grid.Row="45" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="tfE"
+                     Style="{StaticResource textboxStyle1}"
+                     GotFocus="tfE_GotFocus"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Right"
+                     VerticalContentAlignment="Center"
+             
+                     IsReadOnly="True"
+                     />
+            <TextBlock Name="tblEMeasure"
+                       Grid.Column="1"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Text=" MPa"
+                       />
+        </Grid>
+
+    </Grid>
+</Window>

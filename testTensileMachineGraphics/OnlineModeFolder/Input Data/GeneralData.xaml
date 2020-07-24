@@ -1,0 +1,165 @@
+﻿<Window x:Class="testTensileMachineGraphics.OnlineModeFolder.Input_Data.GeneralData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="CanResize"
+        Closed="Window_Closed"
+        FontWeight="Bold"
+        Title="OPŠTI PODACI" Height="207" Width="280">
+    <Grid Background="SkyBlue">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontWeight"  Value="Normal"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="15"/>
+            </Style>
+
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="125"/>
+            <!--  <ColumnDefinition Width="10"/> -->
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="tlbOperator"
+                       Text="Ispitivač"
+                     
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="1"/>
+
+        <TextBox  Name="tfOperator"
+                      Style="{StaticResource textboxStyle1}"
+                      TextChanged="tfOperator_TextChanged"
+                      KeyDown="tfOperator_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="3"
+                      Grid.Row="1"/>
+
+        <TextBlock Name="tlbBrZbIzvestaja"
+                       Text="Br. zbir. izveštaja"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="3"/>
+
+        <TextBox  Name="tfBrZbIzvestaja"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfBrZbIzvestaja_KeyDown"
+                      TextChanged="tfBrZbIzvestaja_TextChanged"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="3"
+                      Grid.Row="3"/>
+
+        <TextBlock Name="tlbBrUzorka"
+                       Text="Br. uzorka"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="5"/>
+        <Grid Name="gridTfBrUzorka" Grid.Column="3" Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox  Name="tfBrUzorka"
+                      Style="{StaticResource textboxStyle1}"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      KeyDown="tfBrUzorka_KeyDown"
+                      TextChanged="tfBrUzorka_TextChanged"
+                      Grid.Column="0"/>
+            <TextBlock Name="tlbCrta"
+                       Text="/"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Grid.Column="1"
+                       />
+            <TextBox  Name="tfBrUzorkaNumberOfSample"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfBrUzorkaNumberOfSample_KeyDown"
+                      TextChanged="tfBrUzorkaNumberOfSample_TextChanged"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="2"/>
+        </Grid>
+
+        <TextBlock Name="tlbSarza"
+                       Text="Šarža"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="7"/>
+
+        <TextBox  Name="tfSarza"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfSarza_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="3"
+                      Grid.Row="7"/>
+
+
+
+            <TextBlock Name="tlbRadniNalog"
+                       Text="Radni nalog"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="9"/>
+
+            <TextBox  Name="tfRadniNalog"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfRadniNalog_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="3"
+                      Grid.Row="9"/>
+
+
+        <TextBlock Name="tlbNaručilac"
+                       Text="Naručilac"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"
+                       Grid.Row="11"/>
+
+        <TextBox  Name="tfNaručilac"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfNaručilac_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="3"
+                      Grid.Row="11"/>
+
+
+
+    </Grid>
+</Window>

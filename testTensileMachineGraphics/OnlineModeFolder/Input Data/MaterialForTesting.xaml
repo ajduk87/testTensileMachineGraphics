@@ -1,0 +1,228 @@
+﻿<Window x:Class="testTensileMachineGraphics.OnlineModeFolder.Input_Data.MaterialForTesting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="CanResize"
+        Closed="Window_Closed"
+        FontWeight="Bold"
+        Title="MATERIJAL" Height="210" Width="280">
+    <Grid Background="SkyBlue">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontWeight"  Value="Normal"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontWeight"  Value="Normal"/>
+            </Style>
+
+        </Grid.Resources>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+
+        <GroupBox Name="grboxEpruvetaNacinPrerade"
+                  Header="Način prerade" FontSize="18"
+                  BorderBrush="White"
+                  Foreground="White"
+                  Grid.Row="9" 
+                  Margin="0,5,0,0" />
+
+        <Grid Name="gridProizvodjac" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="tlbProizvodjac"
+                       Text="Proizvodjač"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"/>
+
+            <TextBox  Name="tfProizvodjac"
+                      Style="{StaticResource textboxStyle1}"
+                      MouseEnter="tfProizvodjac_MouseEnter"
+                      KeyDown="tfProizvodjac_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="2"/>
+
+
+        </Grid>
+
+        <Grid Name="gridDobavljac" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Name="tlbDobavljac"
+                       Text="Dobavljač"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"/>
+
+            <TextBox  Name="tfDobavljac"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfDobavljac_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="2"/>
+
+
+        </Grid>
+
+        <Grid Name="gridPolazniKvalitet" Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            
+            
+            <TextBlock Name="tlbPolazniKvalitet"
+                       Text="Materijal"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"/>
+
+            <TextBox  Name="tfPolazniKvalitet"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfPolazniKvalitet_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="2"/>
+
+
+        </Grid>
+
+        <Grid Name="gridNazivnaDebljina" Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="tlbNazivnaDebljina"
+                       Text="Dimenzije mat"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Grid.Column="1"/>
+
+            <TextBox  Name="tfNazivnaDebljina"
+                      Style="{StaticResource textboxStyle1}"
+                      KeyDown="tfNazivnaDebljina_KeyDown"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Stretch"
+                      Grid.Column="2"/>
+
+
+        </Grid>
+
+        <Grid Name="gridNacinPrerade" Grid.Row="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+          
+
+            <RadioButton Name="rbtnValjani"
+                        GotFocus="rbtnValjani_GotFocus"
+                        Margin="0,0,0,-15"
+                        Grid.Column="1" 
+                        GroupName="nacinprerade" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Content="valj"/>
+
+            <RadioButton Name="rbtnVučeni"
+                        GotFocus="rbtnVučeni_GotFocus"
+                        Margin="0,0,0,-15"
+                        Grid.Column="3" 
+                        GroupName="nacinprerade" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Content="vuč"/>
+
+            <RadioButton Name="rbtnKovani"
+                        GotFocus="rbtnKovani_GotFocus"
+                        Margin="0,0,0,-15"
+                        Grid.Column="5" 
+                        GroupName="nacinprerade" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Content="kov"/>
+
+            <RadioButton Name="rbtnLiveni"
+                        GotFocus="rbtnLiveni_GotFocus"
+                        Margin="0,0,0,-15"
+                        Grid.Column="7" 
+                        GroupName="nacinprerade" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Content="liv"/>
+
+        </Grid>
+
+        <Grid Name="gridNacinPreradeLower" Grid.Row="11">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+          
+          
+
+          
+
+        
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>

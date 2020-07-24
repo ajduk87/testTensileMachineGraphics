@@ -1,0 +1,4 @@
+Aplikacija ukljucena        (2/19/2016 4:52:03 PM)
+The port 'COM11' does not exist.[OnlineMode.xaml.cs] {public OnlineMode(bool simulationM = false)}        (2/19/2016 4:52:10 PM)
+Object reference not set to an instance of an object.[ConditionsOfTesting.xaml.cs] {private void rbtnNo_Checked(object sender, RoutedEventArgs e)}        (2/19/2016 4:52:25 PM)
+Aplikacija iskljucena        (2/19/2016 4:53:35 PM)

@@ -1,0 +1,1140 @@
+﻿<Window x:Class="testTensileMachineGraphics.Options.OptionsPlotting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Title="Podešavanja opcija iscrtavanja grafika" Height="950" Width="645">
+
+    <Grid>
+        <ScrollViewer  CanContentScroll="False"   VerticalScrollBarVisibility="Auto">
+            <Grid Name="gridofflineoptions" Grid.Column="3" Background="LightGray">
+
+            <Grid.Resources>
+
+
+                <Style TargetType="{x:Type TextBlock}" >
+                    <Setter Property="FontSize"  Value="14"/>
+                    <Setter Property="FontFamily" Value="Times New Roman"/>
+                </Style>
+
+                <Style TargetType="{x:Type CheckBox}">
+                    <Setter Property="FontSize"  Value="14.5"/>
+                    <Setter Property="FontFamily" Value="Times New Roman"/>
+                </Style>
+
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Foreground"  Value="White"/>
+                    <Setter Property="Background"  Value="Black"/>
+                </Style>
+
+                <ControlTemplate x:Key="buttonTemplate">
+                    <Grid>
+                        <Ellipse Width="10" Height="10" x:Name="outerCircle">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="1" Color="Black"/>
+                                    <GradientStop Offset="1" Color="Black"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse Width="8" Height="8">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                                    <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Viewbox>
+                            <ContentPresenter Margin="20" Content="{TemplateBinding Button.Content}"/>
+                        </Viewbox>
+                    </Grid>
+
+                </ControlTemplate>
+
+
+            </Grid.Resources>
+
+
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" MaxHeight="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="4"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="4"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="4"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+            </Grid.RowDefinitions>
+
+
+
+
+            <GroupBox Name="grboxEpruvetaKidanje"
+                  Header="Kidanje"
+
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="33"
+                  Grid.Column="0"
+                  Grid.RowSpan="4"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxEpruvetaPrelazniPeriod"
+                  Header="Prelazni period"
+
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="23"
+                  Grid.Column="0"
+                  Grid.RowSpan="10"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxEpruvetaAutomatskoFitovanje"
+                  Header="Automatsko fitovanje"
+
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="17"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxEpruvetaKalibracija"
+                  Header="Kalibracija"
+
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="6"
+                  Grid.Column="0"
+                  Grid.RowSpan="11"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxEpruvetaRezolucija"
+                  Header="Rezolucija"
+
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.RowSpan="4"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxEpruvetaNepodrazumevaniModkidanja"
+                  Header="Nepodrazumevani mod kidanja"
+                  HorizontalAlignment="Left"
+                  Width="270"
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="37"
+                  Grid.Column="0"
+                  Grid.RowSpan="4"
+                  Grid.ColumnSpan="2"/>
+
+            <GroupBox Name="grboxEpruvetaOpsegRacunanjaNa"
+                  Header="Opseg računanja n-a"
+                  HorizontalAlignment="Left"
+                  Margin="275,0,0,0"
+                  Width="336"
+                  FontSize="18"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="37"
+                  Grid.Column="1"
+                  Grid.RowSpan="4" 
+                  Grid.ColumnSpan="2" />
+
+            <TextBlock Name="lblOptionsCaption" 
+                   Text="Opcije offline moda" 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontSize="20"/>
+
+
+            <Grid Name="gridResolution" Grid.Column="1" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblresolution"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="Rezolucija prikaza grafika :  "/>
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfResolution"
+                          TextChanged="tfResolution_TextChanged"
+                          KeyDown="tfResolution_KeyDown"
+
+                          HorizontalAlignment="Stretch"
+                          Height="20"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblresolutionEnd"
+                        Text="[ceo broj]"/>
+
+            </Grid>
+
+            <Grid Name="gridDerivationResolution" Grid.Column="1" Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblDerivationResolution"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Visibility="Hidden"
+                        Text="Rezolucija računanja izvoda :  "/>
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfDerivationResolution"
+                          TextChanged="tfDerivationResolution_TextChanged"
+                          KeyDown="tfDerivationResolution_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Visibility="Hidden"
+                          Height="20"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Visibility="Hidden"
+                        Name="lblDerivationResolutionEnd"
+                        Text="[realan broj]"/>
+
+            </Grid>
+
+
+            <TextBlock Name="lblGraphicCalibrationForce" 
+                   Grid.Column="1"
+                   Grid.Row="8"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   Kalibracija sile   "/>
+
+            <Grid Name="gridNutnDivide" Grid.Column="1" Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="Delilac sile :  "/>
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          IsReadOnly="True"
+                          Name="tfCalForceDivide"
+                          TextChanged="tfCalForceDivide_TextChanged"
+                          KeyDown="tfCalForceDivide_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd"
+                        Text="[realan broj]"/>
+
+            </Grid>
+
+            <Grid Name="gridNutnMultiple" Grid.Column="1" Grid.Row="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple"
+                        Text="Množitelj sile :  "/>
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          IsReadOnly="True"
+                          Name="tfCalForceMultiple"
+                          TextChanged="tfCalForceMultiple_TextChanged"
+                          KeyDown="tfCalForceMultiple_KeyDown"                          
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd"
+                        Text="[realan broj]"/>
+
+            </Grid>
+
+            <TextBlock Name="lblGraphicCalibrationElongation" 
+                   Grid.Row="11"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   Kalibracija izduženja[traverza]   "/>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="12"
+                    Name="gridElonDivide">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonDivide"
+                        Text="Delilac izduženja :  "/>
+
+                <TextBox  Grid.Column="2" 
+                              Name="tfCalElonDivide"
+                              Height="22"
+                          IsReadOnly="True"
+                              TextChanged="tfCalElonDivide_TextChanged"
+                              KeyDown="tfCalElonDivide_KeyDown" Width="Auto" Margin="0,0,0,1" />
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonDivideEnd"
+                        Text="[realan broj]"/>
+            </Grid>
+
+            <Grid   Name="gridElonMultiple"
+                    Grid.Column="1"
+                    Grid.Row="13">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="Množitelj izduženja :  "/>
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalElonMultiple"
+                          IsReadOnly="True"
+                          TextChanged="tfCalElonMultiple_TextChanged"
+                          KeyDown="tfCalElonMultiple_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonMultipleEnd"
+                        Text="[realan broj]"/>
+
+            </Grid>
+
+                <TextBlock Name="lblGraphicCalibrationElongation2" 
+                   Grid.Row="14"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   Kalibracija izduženja[ekstenziometar]   "/>
+
+                <Grid   Grid.Column="1"
+                    Grid.Row="15"
+                    Name="gridElonDivide2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonDivide2"
+                        Text="Delilac izduženja :  "/>
+
+                    <TextBox  Grid.Column="2" 
+                              Name="tfCalElonDivide2"
+                              TextChanged="tfCalElonDivide2_TextChanged"
+                              Height="22"
+                              KeyDown="tfCalElonDivide2_KeyDown" 
+                              Width="Auto" Margin="0,0,0,1" />
+
+                    <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonDivideEnd2"
+                        Text="[realan broj]"/>
+                </Grid>
+
+
+
+                <Grid   Name="gridElonMultiple2"
+                    Grid.Column="1"
+                    Grid.Row="16">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="Množitelj izduženja :  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalElonMultiple2"
+                          TextChanged="tfCalElonMultiple2_TextChanged"
+                          KeyDown="tfCalElonMultiple2_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonMultipleEnd2"
+                        Text="[realan broj]"/>
+
+                </Grid>
+
+
+                <TextBlock Name="lblFittingAutomatic" 
+                   Grid.Row="18"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   X osa   " 
+                   Height="25" 
+                   Margin="298,2,181,18"
+                   Width="108" />
+
+                <TextBlock Name="lblFittingAutomatic2" 
+                   Grid.Row="18"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="Y osa   " 
+                   Height="25" 
+                   Margin="205,2,308,18"
+                   Width="88" />
+
+
+                <Grid Name="gridpoint1" Grid.Row="19" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                    <ColumnDefinition Width="30" MaxWidth="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                </Grid.ColumnDefinitions>
+
+                <Button Name="stylePoint1" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Blue"></Button>
+
+                <Grid Name="gridAutoPoints" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" MaxWidth="20"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="35" MaxWidth="35"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                               Name="lblordnum1auto"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="T1"/>
+
+                    <TextBox  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingAutoProcent1_TextChanged"
+                        KeyDown="tffittingAutoProcent1_KeyDown"
+                        Name="tffittingAutoProcent1"/>
+                    <TextBlock Grid.Column="2"
+                               Grid.ColumnSpan="2"
+                               Name="lblprauto"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+                    </Grid>
+
+                    <TextBlock Grid.Column="4"
+                               Name="lblmaxByXAxis"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="Max dozvoljena vr. po x-u :  "/>
+                </Grid>
+
+            <Grid Name="gridpoint2" Grid.Row="20" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                    <ColumnDefinition Width="30" MaxWidth="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="175"/>
+                        <ColumnDefinition Width="99*" />
+                        <!--centriranje mreze u sredini-->
+                </Grid.ColumnDefinitions>
+
+                <Button Name="stylePoint2" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Yellow"></Button>
+
+                <Grid Name="gridAutoPoints2" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" MaxWidth="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="35" MaxWidth="35"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                               Name="lblordnum2auto"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="T2"/>
+
+                    <TextBox  Grid.Column="1" 
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Bottom"
+                                  Name="tffittingAutoProcent2" 
+                                  TextChanged="tffittingAutoProcent2_TextChanged"
+                                  KeyDown="tffittingAutoProcent2_KeyDown"
+                                  Margin="0,0,0,2" />
+                    <TextBlock Grid.Column="2"
+                               Grid.ColumnSpan="2"
+                               Name="lblprauto2"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+                </Grid>
+
+                    <TextBox    Grid.Column="4"
+                                Width="50"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                TextChanged="tfFittingAutoMaxXValue_TextChanged"
+                                KeyDown="tfFittingAutoMaxXValue_KeyDown"
+                                Name="tfFittingAutoMaxXValue"/>
+
+                    <TextBlock Grid.Column="4"
+                               Name="lblprautomaxXValue"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]" 
+                               Margin="61,3,93,7" />
+
+                </Grid>
+
+            <Grid Name="gridpoint3" Grid.Row="21" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                    <ColumnDefinition Width="30" MaxWidth="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                </Grid.ColumnDefinitions>
+
+                <Button Name="stylePoint3" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Red"></Button>
+
+                <Grid Name="gridAutoPoints3" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" MaxWidth="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="35" MaxWidth="35"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                               Name="lblordnum3auto"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="T3"/>
+
+                    <TextBox  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingAutoProcent3_TextChanged"
+                        KeyDown="tffittingAutoProcent3_KeyDown"
+                        Name="tffittingAutoProcent3"/>
+                    <TextBlock Grid.Column="2"
+                               Grid.ColumnSpan="2"
+                               Name="lblprauto3"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+                </Grid>
+
+            </Grid>
+
+
+            <Grid Name="gridKeepOriginalData" Grid.Row="22" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="155"/>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="185"/>
+                    <!--centriranje mreze u sredini-->
+
+                    <ColumnDefinition Width="10" />
+
+                    <ColumnDefinition Width="175"/>
+                    <!--centriranje mreze u sredini-->
+                </Grid.ColumnDefinitions>
+
+
+
+
+                <CheckBox  Grid.Column="2"
+                        Checked="chbShowOriginalData_Checked"
+                        Unchecked="chbShowOriginalData_Unchecked"
+                        FontSize="10"   
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbShowOriginalData">
+                    <CheckBox.Content>
+                        <TextBlock Text="Zadrži originalan grafik" TextWrapping="Wrap"/>
+                    </CheckBox.Content>
+                </CheckBox>
+
+            </Grid>
+
+            <TextBlock Name="lblPrelazniPeriod" 
+                   Grid.Row="24"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   Prelazni period   "/>
+
+            <Grid Name="gridReHXRange" Grid.Row="25" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+
+                <!--na koliki skok napona se odredjuje izduzenje na osnovu kog ustanovljava se da li je doslo do slucaja kada postoji samo ReL-->
+                <TextBlock Name="lblReHXRange" 
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Podrucje tecenja (ReL-a,ReH-a i Rp02-a)  " 
+                   Margin="0,1" 
+                   Width="238" />
+
+                <TextBox  Grid.Column="5"
+                          Name="tfReHXRange"
+                          TextChanged="tfReHXRange_TextChanged"
+                          KeyDown="tfReHXRange_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+
+                <TextBlock Grid.Column="7"
+                               Name="lblReHXRangeEnd"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+
+            </Grid>
+
+            <Grid Name="gridRationReLRpmaxXrelXmaxForOnlyReL" Grid.Row="27" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="lblRationReLRpmaxForOnlyReL" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="(Max napon za ReL)/(Rm) [%]:  " Margin="0,-7" Width="113" />
+
+
+                <TextBox  Grid.Column="3"
+                          Name="tfRationReLRpmaxForOnlyReL"
+                          TextChanged="tfRationReLRpmaxForOnlyReL_TextChanged"
+                          KeyDown="tfRationReLRpmaxForOnlyReL_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+
+                <TextBlock Name="lblRationXReLXmaxForOnlyReL" 
+                   Grid.Column="5"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="(Min AReL) [%]:"/>
+
+
+                <TextBox  Grid.Column="7"
+                          Name="tfXReLForOnlyReL"
+                          TextChanged="tfXReLForOnlyReL_TextChanged"
+                          KeyDown="tfXReLForOnlyReL_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+            </Grid>
+
+            <Grid Name="gridYieldOptionsOnlyReL" Grid.Row="29" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+
+                <!--na koliki skok napona se odredjuje izduzenje na osnovu kog ustanovljava se da li je doslo do slucaja kada postoji samo ReL-->
+                <TextBlock Name="lblOnlyReLPreasureUnit" 
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Oscilacije napona za odredjivanje samo ReL-a  " 
+                   Margin="0,1" 
+                   Width="238" />
+
+                <TextBox  Grid.Column="5"
+                          Name="tfOnlyReLPreassureUnit"
+                          TextChanged="tfOnlyReLPreassureUnit_TextChanged"
+                          KeyDown="tfOnlyReLPreassureUnit_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+
+                <TextBlock Grid.Column="7"
+                               Name="lblOnlyReLReassureUnitEnd"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+
+
+            </Grid>
+
+            <Grid Name="gridYieldOptions" Grid.Row="31" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="lblYield" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Min pad u [MPa] za [ReH] :  "  />
+
+
+                <TextBox  Grid.Column="3"
+                          Name="tfYield"
+                          TextChanged="tfYield_TextChanged"
+                          KeyDown="tfYield_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+
+                <TextBlock Name="lblMinSubsReLFReL" 
+                   Grid.Column="5"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Max razlika u [MPa] [ReLF] i [ReL] :"/>
+
+
+                <TextBox  Grid.Column="7"
+                          Name="tfMaxSubsReLFReL"
+                          TextChanged="tfMaxSubsReLFReL_TextChanged"
+                          KeyDown="tfMaxSubsReLFReL_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+            </Grid>
+
+
+            <TextBlock Name="lblTearing" 
+                   Grid.Row="34"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="   Kidanje   "/>
+
+
+            <Grid Name="gridForDetectFalseTearing" Grid.Row="35" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" MaxWidth="150"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="50" MaxWidth="50"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock Name="lblTearingMinFallPreassure"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="Min pad napona  kod kidanja" 
+                               Margin="6,0,14,0"
+                               Width="136" />
+
+
+                <TextBox  Grid.Column="1"
+                         TextChanged="tfTearingMinFallPreassure_TextChanged"
+                          KeyDown="tfTearingMinFallPreassure_KeyDown"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Center"
+                          Name="tfTearingMinFallPreassure"/>
+
+                <TextBlock Grid.Column="2"
+                               Name="lblTearingMinFallPreassureEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+
+            </Grid>
+
+
+
+            <Grid Name="gridPodrazumevaniModkidanja" Grid.Row="36" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        TextWrapping="Wrap"
+                        Text="Podrazumevani napon kidanja u odnosu na Rm :  " 
+                        Margin="0,1" 
+                        Width="221" />
+
+                <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfDefaultPreassureOfTearing"
+                          TextChanged="tfDefaultPreassureOfTearing_TextChanged"
+                          KeyDown="tfDefaultPreassureOfTearing_KeyDown"
+ 
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <TextBlock  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblDefaultPreassureOfTearingEnd"
+                        Text="[procenat]"/>
+
+            </Grid>
+
+            <!--<Rectangle Fill="White" Grid.Row="31" Grid.RowSpan="3" Grid.Column="1"/>-->
+
+            <Grid Name="gridChbNepodrazumevaniModkidanja" Grid.Row="38" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Name="chbNepodrazumevaniModkidanja"
+                      Checked="chbNepodrazumevaniModkidanja_Checked"
+                      Unchecked="chbNepodrazumevaniModkidanja_Unchecked"
+                      Content="Uključi nepodrazumevani mod kidanja"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+
+                <TextBlock Name="tblOpsegRacunanja"
+                       Text="Opseg računanja n-a : "
+                       Grid.Column="3"/>
+            </Grid>
+
+            <Grid Name="gridResolutionForTearing" Grid.Row="39" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" MaxWidth="150"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                               Name="lblResolutionForTearing"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               Text="Rezolucija pri kidanju :  "/>
+                <TextBox  Grid.Column="1"
+                      Name="tfResolutionForTearing"
+                      TextChanged="tfResolutionForTearing_TextChanged"
+                      KeyDown="tfResolutionForTearing_KeyDown" Height="26" VerticalAlignment="Top" />
+                <TextBlock Grid.Column="2"
+                               Name="lblResolutionForTearingEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[ceo broj]    "/>
+
+
+                <TextBlock Grid.Column="5"
+                               Name="lblBeginIntervalForN"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="Početak opsega :  "/>
+
+                <TextBox  Grid.Column="6"
+                      Grid.Row="0"
+                      Name="tfBeginIntervalForN"
+                      TextChanged="tfBeginIntervalForN_TextChanged"
+                      KeyDown="tfBeginIntervalForN_KeyDown"
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+                <TextBlock Grid.Column="7"
+                               Name="lblbeginterval"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+            </Grid>
+
+
+            <Grid Name="gridTearingPoint" Grid.Row="40" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" MaxWidth="150"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="85" MaxWidth="85"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                               Name="lblTearingPointCoeff"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               Text="Koeficijent kidanja :  "/>
+                <TextBox  Grid.Column="1"
+                          TextChanged="tfTearingPointCoeff_TextChanged"
+                          KeyDown="tfTearingPointCoeff_KeyDown"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Center"
+                          Name="tfTearingPointCoeff"/>
+                <TextBlock Grid.Column="2"
+                               Name="lblTearingPointCoeffEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[realan broj]"/>
+
+
+                <TextBlock Grid.Column="5"
+                               Name="lblEndIntervalForN"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="Kraj opsega :  "/>
+
+                <TextBox  Grid.Column="6"
+                      Grid.Row="0"
+                      Name="tfEndIntervalForN"
+                      TextChanged="tfEndIntervalForN_TextChanged"
+                      KeyDown="tfEndIntervalForN_KeyDown"  
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+                <TextBlock Grid.Column="7"
+                               Name="lblendterval"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+            </Grid>
+
+
+
+
+        </Grid>
+        </ScrollViewer>
+    </Grid>
+
+</Window>

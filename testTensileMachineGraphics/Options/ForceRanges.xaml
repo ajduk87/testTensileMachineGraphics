@@ -1,0 +1,1002 @@
+﻿<Window x:Class="testTensileMachineGraphics.Options.ForceRanges"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="Opsezi sila" Height="650" Width="405">
+    <Grid Background="LightGray">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type Label}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBlock}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Foreground"  Value="White"/>
+                <Setter Property="Background"  Value="Black"/>
+            </Style>
+
+        </Grid.Resources>
+
+        <ScrollViewer  CanContentScroll="False"   VerticalScrollBarVisibility="Auto">
+
+            <Grid Name="gridforceRanges">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" MaxHeight="10"/>
+                    <RowDefinition Height="35"/>
+                    
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+
+                </Grid.RowDefinitions>
+
+                <GroupBox Name="grboxEpruvetaKalibracija1"
+                  Header="Opseg sila 1"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.RowSpan="7"
+                  Grid.ColumnSpan="9"/>
+
+                <GroupBox Name="grboxEpruvetaKalibracija2"
+                  Header="Opseg sila 2"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="8"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="9"/>
+
+                <GroupBox Name="grboxEpruvetaKalibracija3"
+                  Header="Opseg sila 3"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="14"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="9"/>
+
+                <GroupBox Name="grboxEpruvetaKalibracija4"
+                  Header="Opseg sila 4"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="20"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="9"/>
+
+
+                <GroupBox Name="grboxEpruvetaKalibracija5"
+                  Header="Opseg sila 5"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="26"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="9"/>
+
+                <GroupBox Name="grboxEpruvetaKalibracija6"
+                  Header="Opseg sila 6"
+                  FontSize="14"
+                  BorderBrush="Black"
+                  Foreground="Blue"
+                  Grid.Row="32"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="9"/>
+
+                <Label  Grid.Column="1"
+                        Grid.ColumnSpan="7"
+                        Grid.Row="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCaption"
+                        Content="Koeficijenti pri različitim opsezima sila"/>
+
+                <Grid       Name="row1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="41*" />
+                        <ColumnDefinition Width="21*" />
+                        <ColumnDefinition Width="62*" />
+                        <ColumnDefinition Width="41*" />
+                        <ColumnDefinition Width="41*" />
+                        <ColumnDefinition Width="83*" />
+                        <ColumnDefinition Width="41*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange1"
+                                Checked="forceRange1_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Grid.Column="0"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom1"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom1" 
+                         Grid.Column="2"  
+                         TextChanged="tfFrom1_TextChanged"
+                         KeyDown="tfFrom1_KeyDown"
+                         Height="23" Grid.ColumnSpan="2" Margin="0,4" />
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom1KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="5"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo1"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo1" 
+                             TextChanged="tfTo1_TextChanged"
+                             KeyDown="tfTo1_KeyDown"
+                         Grid.Column="6"  
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="7"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo1KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide1" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide1"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceDivide1"
+                          TextChanged="tfCalForceDivide1_TextChanged"
+                          KeyDown="tfCalForceDivide1_KeyDown"    
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd1"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple1" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple1"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceMultiple1"
+                          TextChanged="tfCalForceMultiple1_TextChanged"
+                          KeyDown="tfCalForceMultiple1_KeyDown"                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd1"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid       Name="row2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange2"
+                                Checked="forceRange2_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Grid.Column="0"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom2"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom2" 
+                         Grid.Column="2"  
+                         TextChanged="tfFrom2_TextChanged"
+                         KeyDown="tfFrom2_KeyDown"
+                         Height="23"  />
+
+                    <Label  Grid.Column="3"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom2KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo2"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo2" 
+                         Grid.Column="5"  
+                         TextChanged="tfTo2_TextChanged"
+                         KeyDown="tfTo2_KeyDown"    
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="6"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo2KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide2" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="11">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide2"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                              Grid.Row="0"
+                              TextChanged="tfCalForceDivide2_TextChanged"
+                              KeyDown="tfCalForceDivide2_KeyDown"
+                              Name="tfCalForceDivide2"
+                         
+                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd2"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple2" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="13">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple2"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceMultiple2"
+                          TextChanged="tfCalForceMultiple2_TextChanged"
+                          KeyDown="tfCalForceMultiple2_KeyDown"                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd2"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid       Name="row3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange3"
+                                Checked="forceRange3_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom3"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom3" 
+                             TextChanged="tfFrom3_TextChanged"
+                             KeyDown="tfFrom3_KeyDown"
+                         Grid.Column="2"  
+                         Height="23"  />
+
+                    <Label  Grid.Column="3"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom3KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo3"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo3" 
+                             TextChanged="tfTo3_TextChanged"
+                             KeyDown="tfTo3_KeyDown"
+                         Grid.Column="5"  
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="6"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo3KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide3" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="17">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide3"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceDivide3"
+                          TextChanged="tfCalForceDivide3_TextChanged"
+                          KeyDown="tfCalForceDivide3_KeyDown"    
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd3"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple3" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="19">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple3"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          TextChanged="tfCalForceMultiple3_TextChanged"
+                          KeyDown="tfCalForceMultiple3_KeyDown"
+                          Name="tfCalForceMultiple3"
+                      
+                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd3"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid   Name="row4"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="21">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange4"
+                                Checked="forceRange4_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom4"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom4" 
+                             TextChanged="tfFrom4_TextChanged"
+                             KeyDown="tfFrom4_KeyDown"
+                         Grid.Column="2"  
+                         Height="23"  />
+
+                    <Label  Grid.Column="3"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom4KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo4"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo4" 
+                             TextChanged="tfTo4_TextChanged"
+                             KeyDown="tfTo4_KeyDown"
+                         Grid.Column="5"  
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="6"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo4KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide4" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="23">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide4"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                              TextChanged="tfCalForceDivide4_TextChanged"
+                              KeyDown="tfCalForceDivide4_KeyDown"
+                          Grid.Row="0"
+                          Name="tfCalForceDivide4"
+                         
+                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd4"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple4" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="25">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple4"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceMultiple4"
+                          TextChanged="tfCalForceMultiple4_TextChanged"
+                          KeyDown="tfCalForceMultiple4_KeyDown"    
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd4"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid   Name="row5"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="27">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange5"
+                                Checked="forceRange5_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom5"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom5" 
+                             TextChanged="tfFrom5_TextChanged"
+                             KeyDown="tfFrom5_KeyDown"
+                         Grid.Column="2"  
+                         Height="23"  />
+
+                    <Label  Grid.Column="3"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom5KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo5"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo5" 
+                             TextChanged="tfTo5_TextChanged"
+                             KeyDown="tfTo5_KeyDown"
+                         Grid.Column="5"  
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="6"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo5KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide5" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="29">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide5"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                              TextChanged="tfCalForceDivide5_TextChanged"
+                              KeyDown="tfCalForceDivide5_KeyDown"
+                          Grid.Row="0"
+                          Name="tfCalForceDivide5"
+                         
+                              
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd5"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple5" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="31">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple5"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          Name="tfCalForceMultiple5"
+                          TextChanged="tfCalForceMultiple5_TextChanged"
+                          KeyDown="tfCalForceMultiple5_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd5"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid   Name="row6"
+                        Grid.Column="0"
+                        Grid.ColumnSpan ="9"
+                        Grid.Row="33">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25" MaxWidth="25" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="Force" 
+                                Name="forceRange6"
+                                Checked="forceRange6_Checked"
+                                Width="15"                       
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                    <Label  Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom6"
+                        Content="od: "/>
+
+                    <TextBox Name="tfFrom6" 
+                             IsReadOnly="True"
+                             TextChanged="tfFrom6_TextChanged"
+                             KeyDown="tfFrom6_KeyDown"
+                         Grid.Column="2"  
+                         Height="23"  />
+
+                    <Label  Grid.Column="3"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblFrom6KN"
+                        Content="[kN]"/>
+
+                    <Label  Grid.Column="4"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo6"
+                        Content="do: "/>
+
+                    <TextBox Name="tfTo6" 
+                             IsReadOnly="True"
+                             TextChanged="tfTo6_TextChanged"
+                             KeyDown="tfTo6_KeyDown"
+                         Grid.Column="5"  
+                         Height="23"  />
+
+
+                    <Label  Grid.Column="6"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblTo6KN"
+                        Content="[kN]"/>
+                </Grid>
+
+                <Grid Name="gridNutnDivide6" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan ="9"
+                      Grid.Row="35">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide6"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Delilac sile :  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          IsReadOnly="True"
+                          Name="tfCalForceDivide6"
+                          TextChanged="tfCalForceDivide6_TextChanged"
+                          KeyDown="tfCalForceDivide6_KeyDown"    
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd6"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+                <Grid Name="gridNutnMultiple6" 
+                      Grid.Column="1"
+                      Grid.ColumnSpan="9"
+                      Grid.Row="37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultiple6"
+                        Content="Množitelj sile:  "/>
+
+                    <TextBox  Grid.Column="2"
+                          Grid.Row="0"
+                          IsReadOnly="True"
+                          Name="tfCalForceMultiple6"
+                          TextChanged="tfCalForceMultiple6_TextChanged"
+                          KeyDown="tfCalForceMultiple6_KeyDown"
+                          HorizontalAlignment="Stretch"
+                          Height="22"
+                          Width="Auto"/>
+
+                    <Label  Grid.Column="4"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd6"
+                        Content="[realan broj]"/>
+
+                </Grid>
+
+
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

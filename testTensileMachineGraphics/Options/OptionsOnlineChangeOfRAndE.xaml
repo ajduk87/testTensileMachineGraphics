@@ -1,0 +1,254 @@
+﻿<Window x:Class="testTensileMachineGraphics.Options.OptionsOnlineChangeOfRAndE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Title="Opcije grafika promene napona i izduženja" Height="360" Width="350">
+    <Grid Background="LightGray">
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type Label}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="FontSize"  Value="14.5"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Foreground"  Value="White"/>
+                <Setter Property="Background"  Value="Black"/>
+            </Style>
+
+        </Grid.Resources>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="10"/>
+            <RowDefinition Height ="35"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="10"/>
+            <RowDefinition Height ="10"/>
+            <RowDefinition Height ="10"/>
+            <RowDefinition Height ="35"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="26"/>
+            <RowDefinition Height ="10"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Name="grboxEpruvetaRazmeraChangeOfR"
+                  Header="Razmera grafika promene napona"
+                  FontSize="15"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="3"/>
+
+
+        <GroupBox Name="grboxEpruvetaRazmeraChangeOfElongation"
+                  Header="Razmera grafika promene izduženja"
+                  FontSize="15"
+                  BorderBrush="Black"
+                  Foreground="Black"
+                  Grid.Row="7"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="3"/>
+
+        <Label Name="lblGraphicRatioChangeOfR" 
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   FontSize="15"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="   Razmera grafika promene napona   "/>
+
+        <Grid Name="gridRbtnsRationChangeOfR" Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.6*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="razmeraChangeOfR" 
+                             Content="automatsko podešavanje" 
+                             Grid.Column="1" 
+                             Height="16"
+                             Checked="rbtnAutoChangeOfR_Checked"
+                             Unchecked="rbtnAutoChangeOfR_Unchecked"
+                             HorizontalAlignment="Left" 
+                             Name="rbtnAutoChangeOfR" 
+                             VerticalAlignment="Center" />
+            <RadioButton GroupName="razmeraChangeOfR" 
+                             Content="ručno podešavanje" 
+                             Height="16" 
+                             
+                             
+                             HorizontalAlignment="Left" 
+                             Grid.Column="3" 
+                             Name="rbtnManualChangeOfR" 
+                             VerticalAlignment="Center" />
+
+        </Grid>
+
+        <Grid Name="gridTfPreassureChangeOfR" Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Label Name="lblRatioPreassureChangeOfR" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center"
+                   Content="Napon[MPa]  :  "/>
+
+
+            <TextBox  Grid.Column="3"
+                      Name="tfRatioForceChangeOfR"
+                      TextChanged="tfRatioForceChangeOfR_TextChanged"
+                      KeyDown="tfRatioForceChangeOfR_KeyDown"
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+        </Grid>
+
+        <Grid Name="gridTfElongationChangeOfR" Grid.Row="4" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Label Name="lblRatioTauChangeOfR" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center"
+                   Content="tau[s]  :  "/>
+
+
+            <TextBox  Grid.Column="3"
+                      Name="tfRatioTauChangeOfR"
+                      TextChanged="tfRatioTauChangeOfR_TextChanged"
+                      KeyDown="tfRatioTauChangeOfR_KeyDown"
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+        </Grid>
+
+        <Label Name="lblGraphicRatioChangeOfElongation" 
+                   Grid.Row="8"
+                   Grid.Column="1"
+                   FontSize="15"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="   Razmera grafika promene izduženja   "/>
+
+        <Grid Name="gridRbtnsRationChangeOfElongation" Grid.Row="9" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.6*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <RadioButton GroupName="razmeraChangeOfElongation" 
+                         Content="automatsko podešavanje" 
+                         Grid.Column="1" 
+                         Height="16"
+                         Checked="rbtnAutoChangeOfElongation_Checked"
+                         Unchecked="rbtnAutoChangeOfElongation_Unchecked"
+                         HorizontalAlignment="Left" 
+                         Name="rbtnAutoChangeOfElongation" 
+                         VerticalAlignment="Center" />
+            <RadioButton GroupName="razmeraChangeOfElongation" 
+                             Content="ručno podešavanje" 
+                             Height="16" 
+                             
+                             
+                             HorizontalAlignment="Left" 
+                             Grid.Column="3" 
+                             Name="rbtnManualChangeOfElongation" 
+                             VerticalAlignment="Center" />
+
+        </Grid>
+
+        <Grid Name="gridTfPreassureChangeOfElongation" Grid.Row="10" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Label Name="lblRatioElongationChangeOfElongation" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center"
+                   Content="Izduženje[%]  :  "/>
+
+
+            <TextBox  Grid.Column="3"
+                      Name="tfRatioElonChangeOfElongation"
+                      TextChanged="tfRatioElonChangeOfElongation_TextChanged"
+                      KeyDown="tfRatioElonChangeOfElongation_KeyDown"
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+        </Grid>
+
+        <Grid Name="gridTfElongationChangeOfElongation" Grid.Row="11" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+
+            <Label Name="lblRatioTauChangeOfElongation" 
+                   Grid.Column="1"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center"
+                   Content="tau[s]  :  "/>
+
+
+            <TextBox  Grid.Column="3"
+                      Name="tfRatioTauChangeOfElongation"
+                      TextChanged="tfRatioTauChangeOfElongation_TextChanged"
+                      KeyDown="tfRatioTauChangeOfElongation_KeyDown"
+                      HorizontalAlignment="Stretch"
+                      Height="25"
+                      Width="Auto"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

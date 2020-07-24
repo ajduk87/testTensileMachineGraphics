@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OnlineModeChangeOfRAndE>
+  <OnlineModeChangeOfRAndECurrentOptions>
+    <isAutoCheckedChangeR>False</isAutoCheckedChangeR>
+    <isManualCheckedChangeR>True</isManualCheckedChangeR>
+    <xRangeChangeR>150</xRangeChangeR>
+    <yRangeChangeR>70</yRangeChangeR>
+    <isAutoCheckedChangeElongation>True</isAutoCheckedChangeElongation>
+    <isManualCheckedChangeElongation>False</isManualCheckedChangeElongation>
+    <xRangeChangeElongation>0.95</xRangeChangeElongation>
+    <yRangeChangeElongation>0.95</yRangeChangeElongation>
+  </OnlineModeChangeOfRAndECurrentOptions>
+</OnlineModeChangeOfRAndE>

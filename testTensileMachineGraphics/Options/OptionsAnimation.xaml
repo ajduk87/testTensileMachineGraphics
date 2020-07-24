@@ -1,0 +1,449 @@
+﻿<Window x:Class="testTensileMachineGraphics.Options.OptionsAnimation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="Podešavanja opcija u animacijskom modu" Height="350" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" MaxWidth="10"/>
+            <ColumnDefinition Width="1.8*"/>
+            <ColumnDefinition Width="10" MaxWidth="10"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" MaxWidth="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="gridGraphicOptions" Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+            </Grid.RowDefinitions>
+            <Label Name="lblOptionsGraphic" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontSize="20"
+                   Content="Opcije grafika animacijskog moda :  "/>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="1"
+                    Name="gridGraphicDisplay">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblDisplay"
+                        Content="Izaberite prikaz grafika u online modu :  "/>
+                <RadioButton GroupName="graphicDisplay"
+                             Name="rbtnContinuous"
+                             Height="15"
+                             MaxHeight="15"
+                             Grid.Column="3"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Center"
+                             Checked="rbtnContinuous_Checked"
+                             Unchecked="rbtnContinuous_Unchecked"
+                             Content="kontinualan prikaz grafika"  />
+
+                <RadioButton GroupName="graphicDisplay"
+                             Name="rbtnDiscrete"
+                             Height="15"
+                             MaxHeight="15"
+                             Grid.Column="5"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Center"
+                             Checked="rbtnDiscrete_Checked"
+                             Unchecked="rbtnDiscrete_Unchecked"
+                             Content="diskretan prikaz grafika" />
+
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="2"
+                    Name="gridGraphicRefresh">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="350" MaxWidth="350"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.12*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblRefresh"
+                        Content="Izaberite vremenski interval osvežavanja grafika u online modu :  "/>
+
+                <ComboBox Name="cmbRefresh"
+                          Grid.Column="3"
+                          Grid.Row="0"
+                          Background="White"
+                          SelectionChanged="cmbRefresh_SelectionChanged"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto">
+                    <ComboBoxItem>  100  </ComboBoxItem>
+                    <ComboBoxItem>  60  </ComboBoxItem>
+                    <ComboBoxItem>  25  </ComboBoxItem>
+                </ComboBox>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblRefreshEnd"
+                        Content=" [Hz] "/>
+            </Grid>
+
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="3"
+                    Name="gridGraphicResolutionCon">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="350" MaxWidth="350"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.12*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblResolutionCon"
+                        Content="Izaberite rezoluciju kontinualnog grafika :  "/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          TextChanged="tfResolutionCon_TextChanged"
+                          Name="tfResolutionCon"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblResolutionConEnd"
+                        Content=" [ceo broj]"/>
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="4"
+                    Name="gridGraphicResolutionDis">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="350" MaxWidth="350"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.12*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblResolutionDis"
+                        Content="Izaberite rezoluciju diskretnog grafika :  "/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          TextChanged="tfResolutionDis_TextChanged"
+                          Name="tfResolutionDis"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblResolutionDisEnd"
+                        Content=" [ceo broj]"/>
+            </Grid>
+
+
+            <Label Name="lblLoadFilepath" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Row="6"
+                   FontSize="20"
+                   Content="Učitavanje putanje fajla :  "/>
+
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="7"
+                    Name="gridPlottingFilePath">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="335" MaxWidth="335"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblFilepath"
+                        Content="Izaberite putanju fajla koji želite da prikažete u offline modu :  "/>
+
+                <Button Name="btnChooseDatabasePath"
+                                        Content="..."
+                                        Width="20"
+                                        Height="20"
+                                        Click="btnChooseDatabasePath_Click"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Grid.Column="3"/>
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="8"
+                    Name="gridPlottingFilePathTextBox">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="700" MaxWidth="700"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+
+                <TextBox  Grid.Column="1"
+                          Grid.Row="0"
+                          Name="tfFilepathPlotting"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          TextChanged="tfFilepathPlotting_TextChanged"
+                          Height="25"
+                          Width="Auto"/>
+
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="9"
+                    Name="gridGraphicSaveButton">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="185" MaxWidth="185"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1"
+                        Name="btnSaveAnimationOptions"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Center"
+                        Content="Zapamti promene opcija" 
+                        Click="btnSaveAnimationOptions_Click" />
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Name="gridGraphicCalibration" Grid.Row="0" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="26" MaxHeight="26"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Name="lblGraphicCalibration" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontSize="20"
+                   Content="Kalibracija  "/>
+
+            <Label Name="lblGraphicCalibrationForce" 
+                   Grid.Row="1"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="   Kalibracija sile : "/>
+
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="2"
+                    Name="gridGraphicCalForce">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="205" MaxWidth="205"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblCalForceDivide"
+                        Content="Koeficijent sa kojim se deli sila :  "/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          Name="tfCalForceDivide"
+                          TextChanged="tfCalForceDivide_TextChanged"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceDivideEnd"
+                        Content=" [realan broj] "/>
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="3"
+                    Name="gridGraphicCalForce2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="205" MaxWidth="205"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblCalForceMultiple"
+                        Content="Koeficijent sa kojim se množi sila :  "/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          Name="tfCalForceMultiple"
+                          TextChanged="tfCalForceMultiple_TextChanged"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalForceMultipleEnd"
+                        Content=" [realan broj] "/>
+            </Grid>
+
+            <Label Name="lblGraphicCalibrationElongation" 
+                   Grid.Row="5"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="   Kalibracija izduženja : "/>
+
+
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="6"
+                    Name="gridGraphicCalElon">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="205" MaxWidth="205"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblCalElonDivide"
+                        FontSize="11"
+                        Content="Koeficijent sa kojim se deli izduženje :"/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          Name="tfCalElonDivide"
+                          TextChanged="tfCalElonDivide_TextChanged"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonDivideEnd"
+                        Content=" [realan broj] "/>
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="7"
+                    Name="gridGraphicCalElon2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="205" MaxWidth="205"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="1"
+                        Grid.Row="0"
+                        FontSize="11"
+                        Name="lblCalElonMultiple"
+                        Content="Koeficijent sa kojim se množi izduženje :  "/>
+
+                <TextBox  Grid.Column="3"
+                          Grid.Row="0"
+                          Name="tfCalElonMultiple"
+                          TextChanged="tfCalElonMultiple_TextChanged"
+                          Background="White"
+                          HorizontalAlignment="Stretch"
+                          Height="25"
+                          Width="Auto"/>
+
+                <Label  Grid.Column="5"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="lblCalElonMultipleEnd"
+                        Content=" [realan broj] "/>
+            </Grid>
+
+
+          
+
+        </Grid>
+
+    </Grid>
+</Window>

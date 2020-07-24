@@ -1,0 +1,9 @@
+Postupak ukljucivanja hardverskog dela u aplikaciji testtensilemachine graphics:
+
+1. U konstructoru klase OnlineMode ukljuci liniju LJUD.OpenLabJack(LJUD.DEVICE.U6, LJUD.CONNECTION.USB, "0", true ,ref lngHandle);
+
+2. U konstructoru klase OnlineMode ukljuci liniju serialport.Open();//serial port vezan je za TLB (merenje sile)
+
+3. U metodi private void btnStartSample_Click ukljuci liniju StartStream() //timer se koristi za Labjack U6 (merenje izduzenja)
+
+4. U metodi private void callAfterManualStopingTearing() ukljuci samo liniju  _LabJackWorking.Stop();

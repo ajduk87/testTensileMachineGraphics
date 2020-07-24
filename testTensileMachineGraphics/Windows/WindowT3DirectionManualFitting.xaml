@@ -1,0 +1,29 @@
+﻿<Window x:Class="testTensileMachineGraphics.Windows.WindowT3DirectionManualFitting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        ResizeMode="NoResize"
+        Title="" Height="100" Width="150">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" MaxHeight="25"/>
+            <RowDefinition Height="25" MaxHeight="25"/>
+        </Grid.RowDefinitions>
+
+        <RadioButton Name="rbtnT3MovingByX"
+                     Checked="rbtnT3MovingByX_Checked"
+                     
+                     Grid.Row="0" 
+                     GroupName="T3PointMovingDirection" 
+                     VerticalAlignment="Center"
+                     Content="postavi T3 po X-osi"/>
+        <RadioButton Name="rbtnT3MovingByY" 
+                     Checked="rbtnT3MovingByY_Checked"
+                     
+                     Grid.Row="1" 
+                     GroupName="T3PointMovingDirection" 
+                     VerticalAlignment="Center"
+                     Content="postavi T3 po Y-osi" />
+
+    </Grid>
+</Window>

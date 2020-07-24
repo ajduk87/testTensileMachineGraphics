@@ -1,0 +1,91 @@
+﻿<Window x:Class="testTensileMachineGraphics.Windows.WindowForNManualCalculation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="Rucno N" Height="200" Width="280">
+
+    <Grid Background="LemonChiffon">
+
+        <Grid.Resources>
+            
+            <Style TargetType="{x:Type TextBlock}" >
+                <Setter Property="FontSize"  Value="15"/>
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+            </Style>
+
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" MaxWidth="10" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10" MaxWidth="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Name="lblA1" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="1" 
+                   Grid.Row="1"/>
+
+
+        <TextBlock Name="lblA2" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="1" 
+                   Grid.Row="2"/>
+
+
+        <TextBlock Name="lblNmanual" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="1" 
+                   Grid.Row="6"/>
+
+        <TextBlock Name="lblF1" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="3" 
+                   Grid.Row="1"/>
+        <TextBlock Name="lblF2" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="3" 
+                   Grid.Row="2"/>
+        <TextBlock Name="lblF3" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="3" 
+                   Grid.Row="3"/>
+        <TextBlock Name="lblF4" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="3" 
+                   Grid.Row="4"/>
+        <TextBlock Name="lblF5" 
+                   
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Grid.Column="3" 
+                   Grid.Row="5"/>
+
+    </Grid>
+</Window>

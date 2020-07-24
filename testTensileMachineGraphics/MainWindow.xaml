@@ -1,0 +1,44 @@
+﻿<Window x:Class="testTensileMachineGraphics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"
+        Title="Test Tensile Machine Graphics" Height="1000" Width="1650">
+    <Grid>
+        <ScrollViewer  CanContentScroll="False"  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+                <TabControl 
+            Name="tabcontrol"
+            SelectionChanged="tabcontrol_SelectionChanged"
+		    Height="Auto"
+		    Width="Auto"
+          
+		    VerticalAlignment="Stretch"
+            HorizontalAlignment="Stretch">
+
+                    <TabItem Name="tab_first" Header="Online režim rada">
+                    </TabItem>
+
+                    <TabItem Name="tab_second" Header="Analiza dijagrama">
+                        <TabControl 
+                            Name="tabcontrolInner"
+		                    Height="Auto"
+		                    Width="Auto"
+		                    VerticalAlignment="Stretch"
+                            HorizontalAlignment="Stretch">
+                            <TabItem Name="tab_firstInner" Header="Iscrtavanje grafika">
+                            </TabItem>
+                            <TabItem Name="tab_secondInner" Header="Animacija">
+                            </TabItem>
+                        </TabControl>
+                    </TabItem>
+
+                    <TabItem Name="tab_third" 
+                             Header="Prikaz dijagrama"
+                             >
+                    </TabItem>
+
+                </TabControl>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

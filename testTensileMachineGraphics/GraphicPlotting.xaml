@@ -1,0 +1,1183 @@
+﻿<UserControl x:Class="testTensileMachineGraphics.GraphicPlotting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="2450">
+
+    <Grid Name="gridTab2PodTab1"  Background="{StaticResource Gradient5}">
+
+        <Grid.Resources>
+
+            <ControlTemplate x:Key="buttonTemplate">
+                <Grid>
+                    <Ellipse Width="10" Height="10" x:Name="outerCircle">
+                        <Ellipse.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="1" Color="Black"/>
+                                <GradientStop Offset="1" Color="Black"/>
+                            </LinearGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse Width="8" Height="8">
+                        <Ellipse.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                                <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                            </LinearGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Viewbox>
+                        <ContentPresenter Margin="20" Content="{TemplateBinding Button.Content}"/>
+                    </Viewbox>
+                </Grid>
+
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="buttonTemplateTriangle" >
+                <Grid>
+                    <Polygon  Width="10" Height="10" Points="10,1 5,10 1,1">
+                        <Polygon.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                                <GradientStop Offset="1" Color="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background.Color}"/>
+                            </LinearGradientBrush>
+                        </Polygon.Fill>
+                    </Polygon>
+                    <Viewbox>
+                        <ContentPresenter Margin="20" Content="{TemplateBinding Button.Content}"/>
+                    </Viewbox>
+                </Grid>
+
+            </ControlTemplate>
+
+
+     
+
+                <Style TargetType="{x:Type Menu}">
+                    <Setter Property="FontSize"  Value="15"/>
+                </Style>
+
+                <Style TargetType="{x:Type MenuItem}">
+                    <Setter Property="FontSize"  Value="15"/>
+                    <Setter Property="Background"  Value="LightBlue"/>
+                    <Setter Property="Foreground"  Value="Black"/>
+                </Style>
+
+
+
+
+       
+
+        </Grid.Resources>
+        
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" MaxWidth="3.7" />
+            <ColumnDefinition Width="0.6*" MinWidth="1330" MaxWidth="1330"/>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="10" MaxWidth="10" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="gridonlineGraphic" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+
+            <GroupBox Name="grboxMechTehProperties"
+                  Header="Mehaničko-tehničke osobine"
+                  FontSize="18"
+                  BorderBrush="DarkBlue"
+                  Foreground="DarkBlue"
+                  Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.RowSpan="5"
+                  Grid.ColumnSpan="3"/>
+
+            <Menu  Width="Auto" 
+                   Height="24"
+                   Grid.Column="1" 
+                   Grid.Row="0"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left">
+                <MenuItem Name="menuIOnlineMain" 
+                          Header="Opcije podešavanja Jungovog modula elastičnosti" 
+                          BorderThickness="2"
+                          Visibility="Visible"
+                          Click="menuIOnlineMain_Click"/>
+                   
+                   
+            </Menu>
+
+            <d3:ChartPlotter x:Name="plotter" Background="Snow" Grid.Row="1" Grid.Column="1" MouseEnter="plotter_MouseEnter" MouseDoubleClick="plotter_MouseDoubleClick" MouseLeftButtonDown="plotter_MouseLeftButtonDown" KeyDown="plotter_KeyDown" MinHeight="750" MaxHeight="750" VerticalAlignment="Top">
+                <d3:MarkerPointsGraph Name="_MarkerGraph"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph2"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText2"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph3"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText3"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph4"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText4"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph5"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText5"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph6"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText6"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph7"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText7"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph8"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText8"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph9" Visibility="Collapsed"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText9"/> -->
+                <d3:MarkerPointsGraph Name="_MarkerGraph10"/>
+                <!-- <d3:MarkerPointsGraph Name="_MarkerGraphText10"/> -->
+                <d3:Header FontFamily="Times New Roman" Content="Grafik"/>
+                <d3:VerticalAxisTitle FontFamily="Times New Roman" Content="R [MPa]" />
+                <d3:HorizontalAxisTitle FontFamily="Times New Roman" Content="e [%]"/>
+                <!--<d3:HorizontalLine Value="{Binding MaxVoltage}" Stroke="Red" StrokeThickness="2"/>
+            <d3:HorizontalLine Value="{Binding MinVoltage}" Stroke="Red" StrokeThickness="2"/>-->
+            </d3:ChartPlotter>
+
+           
+
+            <Grid Name="gridRRelReHRp02" Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Name="gridRpmin"  Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock Grid.Column="2"
+                               Name="lblFm"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Right"
+                               TextWrapping="Wrap"
+                               Text="Fm  "/>
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True" 
+                              VerticalAlignment="Bottom"
+                              Name="tfFm"  />
+                    <TextBlock Grid.Column="4"
+                               Name="lblFmEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[N]"/>
+                </Grid>
+
+                <Grid Name="gridReH" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Name="chbReHVisibility"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Checked="chbReHVisibility_Checked"
+                              Unchecked="chbReHVisibility_Unchecked"/>
+
+                    <Button Name="stylePointReH" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Gray"></Button>
+
+                    <TextBlock Grid.Column="2"
+                               Name="lblReH"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Right"
+                               TextWrapping="Wrap"
+                               FontSize="13"
+                               Text="ReH  "/>
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True" 
+                              VerticalAlignment="Bottom"
+                              TextChanged="tfReH_TextChanged"
+                              Name="tfReH"  />
+                    <TextBlock Grid.Column="4"
+                               Name="lblReHEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[MPa]"/>
+                </Grid>
+
+                <Grid Name="gridRp02" Grid.Row="30" Grid.Column="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Name="chbRp02Visibility"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Checked="chbRp02Visibility_Checked"
+                              Unchecked="chbRp02Visibility_Unchecked"/>
+
+                    <Button Name="stylePointRp02" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Violet"></Button>
+                    
+                    <TextBlock Grid.Column="2"
+                               Name="lblRp02"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               FontSize="13"
+                               Text="Rp02"/>
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True"
+                              TextChanged="tfRp02_TextChanged"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Center"
+                              Name="tfRp02"/>
+                    <TextBlock Grid.Column="4"
+                               Name="lblRp02End"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[MPa]"/>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Name="gridRRpmaxFmax" Grid.Row="5" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Name="gridRpmax"  Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Name="chbRmVisibility"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Checked="chbRmVisibility_Checked"
+                              Unchecked="chbRmVisibility_Unchecked"/>
+
+                    <Button Name="stylePointRm" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Black"></Button>
+                    
+                    <TextBlock Name="lblRm"
+                               Grid.Column="2"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="Rm  "  />
+
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True"
+                              TextChanged="tfRm_TextChanged"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Center"
+                              Name="tfRm"/>
+                    <TextBlock Grid.Column="4"
+                               Name="lblRmEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[MPa]"/>
+                </Grid>
+
+               <Grid Name="gridFmax" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <CheckBox Name="chbReLVisibility"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Checked="chbReLVisibility_Checked"
+                              Unchecked="chbReLVisibility_Unchecked"/>
+
+                    <Button Name="stylePointRel" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Orange"></Button>
+
+                    <TextBlock Name="lblReL"
+                               Grid.Column="2"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="ReL  "  />
+
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Center"
+                              TextChanged="tfReL_TextChanged"
+                              Name="tfReL"/>
+                    <TextBlock Grid.Column="4"
+                               Name="lblRpminEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[MPa]"/>
+                </Grid>
+
+                <Grid Name="gridA" Grid.Column="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="50" MaxWidth="50"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <CheckBox Name="chbAVisibility"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Checked="chbAVisibility_Checked"
+                              Unchecked="chbAVisibility_Unchecked"/>
+
+                    <Button Name="stylePointA" Grid.Column="1" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Red"></Button>
+
+                    <TextBlock Grid.Column="2"
+                               Name="lblA"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Right"
+                               TextWrapping="Wrap"
+                               Text="A  "/>
+                    <TextBox  Grid.Column="3"
+                              Style="{StaticResource textboxStyle1}"
+                              IsReadOnly="True" 
+                              VerticalAlignment="Bottom"
+                              Name="tfA"  />
+                    <TextBlock Grid.Column="4"
+                               Name="lblAEnd"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Text="[%]"/>
+                </Grid>
+
+            </Grid>
+
+            <Border Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                <Button Name="btnPlottingMode"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    Width="270"
+                    Height="30"
+                    Click="btnPlottingMode_Click"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <Button.Content>
+                        <TextBlock 
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Foreground="Green"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Text="1. UČITAJ IZABRANI FAJL"/>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+            <Label  Name="lblOnlineStatus" 
+                    Content="Offline mod"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontSize="20"/>
+            <CheckBox Content="Ukljuci korekciju fitovanja" 
+                      Grid.Row="8" 
+                      Height="16" 
+                      HorizontalAlignment="Left" 
+                      Margin="727,5,0,0" 
+                      Name="chbTurnOnFittingCorrection" 
+                      VerticalAlignment="Top" />
+        </Grid>
+
+       
+
+            <Grid Name="gridofflineoptions" Grid.Column="3" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="520" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                <RowDefinition Height="10" MaxHeight="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="26"/>
+            </Grid.RowDefinitions>
+
+
+
+            <GroupBox Name="grboxRazmeraPlotting"
+                  Header="Razmera"
+                  FontSize="18"
+                  BorderBrush="DarkBlue"
+                  Foreground="DarkBlue"
+                  Grid.Row="7"
+                  Grid.Column="0"
+                  Grid.RowSpan="6"
+                  Grid.ColumnSpan="2"/>
+
+
+            <GroupBox Name="grboxFilePathPlotting"
+                  Header="Putanja fajla"
+                  FontSize="18"
+                  BorderBrush="DarkBlue"
+                  Foreground="DarkBlue"
+                  Grid.Row="13"
+                  Grid.Column="0"
+                  Grid.RowSpan="5"
+                  Grid.ColumnSpan="3"/>
+
+            <GroupBox Name="grboxFitting"
+                  Header="Fitovanje"
+                  FontSize="18"
+                  BorderBrush="DarkBlue"
+                  Foreground="DarkBlue"
+                  Grid.Row="18"
+                  Grid.Column="0"
+                  Grid.RowSpan="13"
+                  Grid.ColumnSpan="3"/>
+                
+                
+            <Grid   Grid.Column="1"
+                    Grid.Row="3"
+                    Name="gridAutomaticGoToPrintMode">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                </Grid.ColumnDefinitions>
+
+                <CheckBox  Grid.Column="1"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbAutomaticGoToPrintMode"
+                        Content="Ukljuci automatsko prebacivanje u print mod"/>
+            </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="4"
+                    Name="gridShowChangeOfRAndE">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                </Grid.ColumnDefinitions>
+
+                <CheckBox  Grid.Column="1"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        IsEnabled="False"
+                        Visibility="Hidden"
+                        Checked="chbShowChangeOfRAndEe_Checked"
+                        Unchecked="chbShowChangeOfRAndEe_Unchecked"
+                        Name="chbShowChangeOfRAndEe"
+                        Content="Prikaži grafike promene napona i izduženja prilikom učitavanja"/>
+            </Grid>
+
+
+
+            <TextBlock Name="lblGraphicRatio" 
+                   Grid.Row="8"
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="   Razmera   "/>
+
+                <Grid Name="gridRbtnsRation" Grid.Row="9" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.6*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton GroupName="razmeraOffline" 
+                             Grid.Column="1" 
+                             Height="16"
+                             Unchecked="rbtnAutoOff_Unchecked"
+                             Checked="rbtnAutoOff_Checked"
+                             HorizontalAlignment="Left"
+                             Visibility="Hidden"
+                             Name="rbtnAutoOff" 
+                             
+                             VerticalAlignment="Center" >
+                        <RadioButton.Content>
+                            <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Text="ukljuci zumiranje"/>
+                        </RadioButton.Content>
+                    </RadioButton>
+                    <RadioButton GroupName="razmeraOffline" 
+                             Height="16" 
+                            
+                             Visibility="Hidden"
+                             HorizontalAlignment="Left" 
+                             Grid.Column="3" 
+                             Name="rbtnManual" 
+                             VerticalAlignment="Center" >
+                        <RadioButton.Content>
+                            <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Text="iskljuci zumiranje"/>
+                        </RadioButton.Content>
+                    </RadioButton>
+
+                </Grid>
+
+           <Grid Name="gridChboxsRation" Grid.Row="10" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.6*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <CheckBox  Grid.Column="1"
+                        Grid.Row="0"
+                        Checked="chbPrikaziOriginalAfterRatioChanging_Checked"
+                        Unchecked="chbPrikaziOriginalAfterRatioChanging_Unchecked"   
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbPrikaziOriginalAfterRatioChanging"
+                        Visibility="Hidden"
+                        Content="Prikaži grafik sa originalnim podacima "/>
+
+                <CheckBox  Grid.Column="3"
+                        Grid.Row="0"
+                        Checked="chbPrikaziFitovaniAfterRatioChanging_Checked"
+                        Unchecked="chbPrikaziFitovaniAfterRatioChanging_Unchecked"   
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbPrikaziFitovaniAfterRatioChanging"
+                        Visibility="Hidden"
+                        Content="Prikaži fitovani grafik "/>
+
+            </Grid>
+
+            <Grid Name="gridTfPreassure" Grid.Row="10" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Name="lblRatioPreassure" 
+                               Grid.Column="1"
+                               HorizontalAlignment="Right" 
+                               VerticalAlignment="Center"
+                               Text="Napon[MPa]  :  "/>
+
+
+                    <TextBox  Grid.Column="3"
+                          Name="tfRatioForce"
+                          TextChanged="tfRatioForce_TextChanged"
+                          KeyDown="tfRatioForce_KeyDown"
+                          Style="{StaticResource textboxStyle1}"
+                          HorizontalAlignment="Left" Width="Auto" Height="25" VerticalAlignment="Top" />
+
+                </Grid>
+
+                <Grid Name="gridTfElongation" Grid.Row="11" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Name="lblRatioElongation" 
+                               Grid.Column="1"
+                               HorizontalAlignment="Right" 
+                               VerticalAlignment="Center"
+                               Text="Izduženje[%]  :  "/>
+
+
+                    <TextBox  Grid.Column="3"
+                          Name="tfRatioElongation"
+                          TextChanged="tfRatioElongation_TextChanged"
+                          KeyDown="tfRatioElongation_KeyDown"
+                          Style="{StaticResource textboxStyle1}"
+                          HorizontalAlignment="Left"
+                          Height="25"
+                          Width="Auto"/>
+
+                </Grid>
+
+
+                <Grid   Grid.Column="1"
+                    Grid.Row="15"
+                    Name="gridPlottingFilePath">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock  Grid.Column="1"
+                        Grid.Row="0"
+                        Name="lblFilepath"
+                        VerticalAlignment="Center"
+                        Text="Putanja fajla koju želite da prikažete u offline modu :  "/>
+
+                <Border Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                    <Button Name="btnChooseDatabasePath"
+                                        Content="..."
+                                        Width="20"
+                                        Height="30"
+                                        FontSize="20"
+                                        FontWeight="Bold"
+                                        Click="btnChooseDatabasePath_Click"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Grid.Column="3"/>
+                </Border>
+            </Grid>
+
+
+            <Grid   Name="gridPlottingFilePathTextBox"
+                        Grid.Column="1"
+                        Grid.Row="16">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="17*" />
+                    <RowDefinition Height="9*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+                        <ColumnDefinition Width="541" MaxWidth="700"/>
+                        <ColumnDefinition Width="159*"/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <TextBox  Grid.Column="1" 
+                              Name="tfFilepathPlotting"
+                              Style="{StaticResource textboxStyle1}"
+                              HorizontalAlignment="Left"
+                              TextChanged="tfFilepathPlotting_TextChanged"
+                              KeyDown="tfFilepathPlotting_KeyDown"
+                              Height="25"
+                              Width="500" Grid.RowSpan="2" />
+
+                </Grid>
+
+                <Grid   Grid.Column="1"
+                    Grid.Row="19"
+                    Name="gridFititngModeCheckBox">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox  Grid.Column="1"
+                        Grid.Row="0"
+                        Checked="chbFittingMode_Checked"
+                        Unchecked="chbFittingMode_Unchecked"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbFittingMode"
+                        Content="Ukljuci fitovanje"/>
+
+
+                </Grid>
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="20"
+                    Name="gridFititngManualModeCheckBox">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+                    <ColumnDefinition Width="30" MaxWidth="30"/>
+                    <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                </Grid.ColumnDefinitions>
+
+                <CheckBox  Grid.Column="1"
+                        Grid.Row="0"
+                        Checked="chbFititngManualMode_Checked"
+                        Unchecked="chbFititngManualMode_Unchecked"   
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="chbFititngManualMode"
+                        Content="Ukljuci rucni mod fitovanja"/>
+
+
+            </Grid>
+
+
+            <Grid   Grid.Column="1"
+                    Grid.Row="21"
+                    Name="gridFititngModePointAuto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="10" MaxWidth="10"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock  Grid.Column="1"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Name="fittingAutoPoint"
+                        Text="Tačka Rm-a je :  "/>
+
+
+                </Grid>
+
+                <Grid   Grid.Column="1"
+                    Grid.Row="22"
+                    Name="gridFititngModePointAutoContent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Name="gridInnerFititngModePointAutoContent" Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="30" MaxWidth="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="45" MaxWidth="45"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox  Grid.Column="0"
+                                  Style="{StaticResource textboxStyle1}"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Center"
+                                  IsReadOnly="True"
+                                  Name="tffittingCrossheadPointX"/>
+                        <TextBlock Grid.Column="1"
+                                   Name="lblpr"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+                        <TextBox  Grid.Column="2"
+                                  Style="{StaticResource textboxStyle1}"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Center"
+                                  IsReadOnly="True"
+                                  Name="tffittingCrossheadPointY"/>
+                        <TextBlock Grid.Column="3"
+                               Name="lblmpa"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+                    </Grid>
+
+
+                </Grid>
+
+                <Grid Name="gridpoint1" Grid.Row="23" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="stylePoint1" Grid.Column="0" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Blue"></Button>
+
+                    
+                    <Grid Name="gridManualPoints" Grid.Column="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" MaxWidth="20"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="30" MaxWidth="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="45" MaxWidth="45"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                               Name="lblordnum1man"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="T1"/>
+
+                        <TextBox  Grid.Column="1" 
+                                  Style="{StaticResource textboxStyle1}"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Bottom"
+                                  TextChanged="tffittingManPoint1X_TextChanged"
+                                  KeyDown="tffittingManPoint1X_KeyDown"
+                                  Name="tffittingManPoint1X" 
+                                  Margin="0,0,0,2" />
+                        <TextBlock Grid.Column="2"
+                               Name="lblprman"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+                        <TextBox  Grid.Column="3"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingManPoint1Y_TextChanged"
+                        KeyDown="tffittingManPoint1Y_KeyDown"
+                        Name="tffittingManPoint1Y"/>
+                        <TextBlock Grid.Column="4"
+                               Name="lblmpaman"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+
+                    </Grid>
+
+                </Grid>
+
+                <Grid Name="gridpoint2" Grid.Row="24" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="stylePoint2" Grid.Column="0" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Yellow"></Button>
+
+               
+                    <Grid Name="gridManualPoints2" Grid.Column="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" MaxWidth="20"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="30" MaxWidth="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="45" MaxWidth="45"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                               Name="lblordnum2man"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="T2"/>
+
+                        <TextBox  Grid.Column="1"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingManPoint2X_TextChanged"
+                        KeyDown="tffittingManPoint2X_KeyDown"
+                        Name="tffittingManPoint2X"/>
+                        <TextBlock Grid.Column="2"
+                               Name="lblprman2"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+                        <TextBox  Grid.Column="3"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingManPoint2Y_TextChanged"
+                        KeyDown="tffittingManPoint2Y_KeyDown"
+                        Name="tffittingManPoint2Y"/>
+                        <TextBlock Grid.Column="4"
+                               Name="lblmpaman2"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+
+                    </Grid>
+
+                </Grid>
+
+                <Grid Name="gridpoint3" Grid.Row="25" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" MaxWidth="30" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="10" MaxWidth="10" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="stylePoint3" Grid.Column="0" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Red"></Button>
+
+                 
+                    <Grid Name="gridManualPoints3" Grid.Column="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" MaxWidth="20"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="30" MaxWidth="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="45" MaxWidth="45"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                               Name="lblordnum3man"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="T3"/>
+
+                        <TextBox  Grid.Column="1"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingManPoint3X_TextChanged"
+                        KeyDown="tffittingManPoint3X_KeyDown"
+                        Name="tffittingManPoint3X"/>
+                        <TextBlock Grid.Column="2"
+                               Name="lblprman3"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+                        <TextBox  Grid.Column="3"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextChanged="tffittingManPoint3Y_TextChanged"
+                        KeyDown="tffittingManPoint3Y_KeyDown"
+                        Name="tffittingManPoint3Y"/>
+                        <TextBlock Grid.Column="4"
+                               Name="lblmpaman3"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[MPa]"/>
+
+                    </Grid>
+
+                </Grid>
+
+            <Grid Name="gridpointR2R3R4Border" Grid.Row="26" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" MaxWidth="30" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="10" MaxWidth="10" />
+                </Grid.ColumnDefinitions>
+
+                <Button Name="stylePoint4" Grid.Column="0" Height="10" Width="10" Template="{StaticResource buttonTemplate}" Background="Black"></Button>
+
+                <Grid Name="gridManualPoints4" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" MaxWidth="40"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="30" MaxWidth="30"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="45" MaxWidth="45"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                               Name="lblR2R3R4Border"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="R2/R4"/>
+
+                    <TextBox  Grid.Column="1"
+                                  Style="{StaticResource textboxStyle1}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        
+                        Name="tfR2R4ManualOfflineMode"/>
+                    <TextBlock Grid.Column="2"
+                               Name="lblprman4"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="[%]"/>
+
+                </Grid>
+
+            </Grid>
+
+
+            <Grid Name="gridFittingButtons" Grid.Row="28" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" MinWidth="210"/>
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="*" MaxWidth="10"/>
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                <Border Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                    <Button Name="btnTurnOnFitting"
+                            Width="350"
+                            Visibility="Collapsed"
+                            Height="30"
+                            FontSize="18"
+                            FontWeight="Bold"
+                            Click="btnTurnOnFitting_Click"
+                            Foreground="Green"
+                            Content="2. PRIKAŽI FITOVANI GRAFIK"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Grid.Column="0"/>
+                </Border>
+            </Grid>
+
+           
+       
+
+
+          
+
+                <Grid Name="gridTotalRelativeElongation" Grid.Row="30" Grid.Column="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8" MaxWidth="8"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="33"/>
+                </Grid.ColumnDefinitions>
+
+                    <Button Name="btnCalculateTotalRelElong"
+                            Click="btnCalculateTotalRelElong_Click"
+                            Visibility="Hidden"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Center"
+                            Foreground="Green"
+                            Content="3. Izračunaj ukupno relativno izduženje"
+                            Grid.Row="0" 
+                            Grid.Column="2"/>
+                </Grid>
+
+                <Grid Name="gridLBLTotalRelativeElongation" Grid.Row="31" Grid.Column="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8" MaxWidth="8"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Name="lblCalculateTotalRelElong"
+                               Visibility="Hidden"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Text="Nije izračunato relativno izduženje."
+                               Grid.Column="1"/>
+                </Grid>
+
+            <Border Grid.Column="1" Grid.Row="29" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="5" Background="#BBB">
+                <Button Name="btnShowOfflineOptions"
+                    Width="250"
+                    Height="30"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Content="OPCIJE OFFLINE MODA"
+                    Grid.Column="1"
+                    Grid.Row="33"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="btnShowOfflineOptions_Click"/>
+            </Border>
+
+
+        </Grid>
+
+     
+
+    </Grid>
+
+</UserControl>
