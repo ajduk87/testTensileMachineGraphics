@@ -1,0 +1,8 @@
+/.vs
+/Release
+/DynamicDataDisplay
+/DynamicDataDisplaySample
+/obj
+/testTensileMachineGraphics/obj
+/testTensileMachineGraphics/bin
+/PdfFileWriter

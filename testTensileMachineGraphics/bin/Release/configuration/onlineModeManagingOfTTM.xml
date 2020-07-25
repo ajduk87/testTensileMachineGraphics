@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<OnlineModeManagingOfTTM>
-  <OnlineModeManagingOfTTMCurrentOptions>
-    <Rmax>60</Rmax>
-    <Rmin>6</Rmin>
-    <eR2>0.00025</eR2>
-    <eR4>0.0067</eR4>
-  </OnlineModeManagingOfTTMCurrentOptions>
-</OnlineModeManagingOfTTM>

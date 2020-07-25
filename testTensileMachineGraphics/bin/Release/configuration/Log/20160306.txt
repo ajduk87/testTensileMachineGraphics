@@ -1,3 +1,0 @@
-Aplikacija ukljucena        (3/6/2016 4:34:00 PM)
-The port 'COM11' does not exist.[OnlineMode.xaml.cs] {public OnlineMode(bool simulationM = false)}        (3/6/2016 4:34:06 PM)
-Aplikacija iskljucena        (3/6/2016 4:34:43 PM)
