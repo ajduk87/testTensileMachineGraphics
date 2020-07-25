@@ -82,7 +82,7 @@ namespace testTensileMachineGraphics
         private List<double> forceInKN = new List<double>();
         private List<double> forceInKN_Offline = new List<double>();
 
-        private List<double> relativeElongation = new List<double>();//((absoluteElongation[i] * mmCoeff / mmDivide + l0) - l0)/(l0) * 100 
+        private List<double> relativeElongation = new List<double>();//((absoluteElongation[i] * mmCoeff / mmDivide + l0) - l0)/(l0) * 100
         private List<double> substructionFromFirstLengthData = new List<double>();
         private List<double> absoluteElongation = new List<double>();//roughDeltaL * Constants.mmCoeff / Constants.mmDivide
         private double firstRoughDeltaL = 0.0;
@@ -93,7 +93,7 @@ namespace testTensileMachineGraphics
 
         private bool isL0Offline = false;
         private bool isS0Offline = false;
-       
+
 
         public int CountLine_ONLINE = 0;
         public int CountLine_ONLINE2 = 0;
@@ -146,7 +146,7 @@ namespace testTensileMachineGraphics
         public List<double> FittingRelativeElongation
         {
             get { return fittingRelativeElongation; }
-            set 
+            set
             {
                 if (value != null)
                 {
@@ -167,18 +167,18 @@ namespace testTensileMachineGraphics
             }
         }
 
-        public bool IsL0Offline 
+        public bool IsL0Offline
         {
             get { return isL0Offline; }
         }
 
-        public bool IsS0Offline 
+        public bool IsS0Offline
         {
             get { return isS0Offline; }
         }
 
         private double l0Offline;
-        public double L0Offline 
+        public double L0Offline
         {
             get { return l0Offline; }
         }
@@ -256,7 +256,7 @@ namespace testTensileMachineGraphics
             textReader.Close();
         }
 
-       
+
 
         public DataReader(string filepath)
         {
@@ -284,7 +284,7 @@ namespace testTensileMachineGraphics
 
         #region methods
 
-        public double getS0Offline() 
+        public double getS0Offline()
         {
             try
             {
@@ -392,7 +392,7 @@ namespace testTensileMachineGraphics
             }
         }
 
-        public void ClearFittingData() 
+        public void ClearFittingData()
         {
             try
             {
@@ -448,7 +448,7 @@ namespace testTensileMachineGraphics
             try
             {
                 //The "using" is important because FileStream implements IDisposable and
-                //"using" will avoid a heap exhaustion situation when too many handles  
+                //"using" will avoid a heap exhaustion situation when too many handles
                 //are left undisposed.
                 using (FileStream fileStream = File.Open(_filepathOnline, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
                 {
@@ -485,7 +485,7 @@ namespace testTensileMachineGraphics
                 string line = String.Empty;
                 data2 = new List<string>();
                 dataSplit2 = new List<List<string>>();
-           
+
                     FileInfo file = new FileInfo(_filepathOnline);
                     if (IsFileinUse(file) == true)
                     {
@@ -537,7 +537,7 @@ namespace testTensileMachineGraphics
             }
         }
 
-      
+
 
         public int ReadDataOnLine()
         {
@@ -549,7 +549,7 @@ namespace testTensileMachineGraphics
                 string line = String.Empty;
                 data = new List<string>();
                 dataSplit = new List<List<string>>();
-           
+
                     FileInfo file = new FileInfo(_filepathOnline);
                     if (IsFileinUse(file) == true)
                     {
@@ -588,7 +588,10 @@ namespace testTensileMachineGraphics
                     {
                         return 0;
                     }
-                    data = str.Split('\n').ToList();
+                    List<string> potentialData = new List<string>();
+
+                    potentialData = str.Split('\n').ToList();
+                    data = potentialData.Where(row => row.Length == 8).ToList();
 
 
                     for (int i = 0; i < data.Count; )
@@ -614,13 +617,13 @@ namespace testTensileMachineGraphics
                                 {
                                     double currPreassureInMPa = 0.0;
                                     double currForceInKN = 0.0;
-         
+
                                     if (roughForce.Count == 0 && tempForce >= 0)
                                     {
                                         firstRoughForceData = tempForce;
                                         roughForce.Add(tempForce);
                                     }
-                               
+
 
 
                                     if (tempForce >= 0)
@@ -650,7 +653,7 @@ namespace testTensileMachineGraphics
                                 }
                                 else
                                 {
-                              
+
                                 }
 
                                 double tempDeltaL = 0.0;
@@ -741,7 +744,7 @@ namespace testTensileMachineGraphics
                     //}
 
 
-                
+
                         return data.Count;
             }
             catch (Exception ex)
@@ -764,7 +767,10 @@ namespace testTensileMachineGraphics
                     fileNotExist = true;
                     return;
                 }
-                data = File.ReadAllLines(_filepath).ToList();
+                List<string> potentialData = new List<string>();
+
+                potentialData = File.ReadAllLines(_filepath).ToList();
+                data = potentialData.Where(row => row.Length == 8).ToList();
 
 
                 for (int i = 0; i < data.Count; i++)
