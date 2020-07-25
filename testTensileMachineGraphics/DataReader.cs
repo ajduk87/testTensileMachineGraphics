@@ -591,10 +591,10 @@ namespace testTensileMachineGraphics
                     List<string> potentialData = new List<string>();
 
                     potentialData = str.Split('\n').ToList();
-                    data = potentialData.Where(row => row.Length == 8).ToList();
+                    data = potentialData.Where(row => row.Split('\t').First().Length == 6).ToList();
 
 
-                    for (int i = 0; i < data.Count; )
+                for (int i = 0; i < data.Count; )
                     {
                         List<string> curList = new List<string>();
                         curList = data[i].Split('\t').ToList();
@@ -770,7 +770,7 @@ namespace testTensileMachineGraphics
                 List<string> potentialData = new List<string>();
 
                 potentialData = File.ReadAllLines(_filepath).ToList();
-                data = potentialData.Where(row => row.Length == 8).ToList();
+                data = potentialData.Where(row => row.Split('\t').First().Length == 6).ToList();
 
 
                 for (int i = 0; i < data.Count; i++)
